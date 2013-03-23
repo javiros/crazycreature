@@ -1,0 +1,590 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+   <title>Crazy Creatures</title>
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+   <link rel="stylesheet" type="text/css" href="crazy_creatures.css"/>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+   <script>
+	var questions = [
+		{
+			text: "this is my question",
+			answers: ["A", "B", "C", "D"],
+			correct: 2	
+		},
+		{
+			text: "Q 2",
+			answers: ["A 2", "B 3", "qwe", "poi"],
+			correct: 2
+		}
+	];
+	
+	var question_index = 0;
+	var display_question = (function() {
+		var question = questions[question_index];
+		console.log(question);
+		$("#question").text(question.text);
+		
+		$(".answer").each(function(i) {
+			$(this).text(question.answers[i]);
+		});
+	});
+	
+	var validate_answer = (function(e) {
+		alert($(this).text());
+		question_index ++;
+		display_question();
+	});
+	
+	$(document).ready(function(){
+		display_question();
+		$(".answer").on("click", validate_answer);
+	});
+   /*
+   $(document).ready(function(){
+     $("#btn1").click(function(){
+       $('#slides_1').slideDown(3000);
+       $('#ticks').fadeIn(4000);
+     });
+	 $('#btn1').click(function()  {
+	     $('#questions1_1').fadeIn(4000);
+		 $('#answers1_1').fadeIn(4000);
+     	 $('#questions1').hide(0);
+		 $('#answers1').hide(0);
+
+	 });
+   });
+   */
+   </script>
+	<script>
+	/*
+		$(document).ready(function() {
+			$("#btnstage1").click(function() {
+				$('#quiz_container2').show();			
+				$("#quiz_container1").hide();
+			});
+					
+		});
+	*/
+	</script>
+   
+   </head>
+<body>
+	<div id= "container">
+
+		<div id="banner">
+			
+		</div>
+		<div id="text" class="text_blue_18">
+			You can make your <br />
+			<span class="text_pink_18">CRAZY</span> CREATURES <br />
+			with the right Answers!
+			<p class="text_red_24"> Hey Hey Let's Go!!</p>
+			Let's make a <span class="text_red_18">MONKEY</span><br />
+			With Only 3 Questions!
+		</div>
+		
+		<div id="quiz_container1">
+			<div id="quiz">
+				<div id="question"></div>
+				<ul>
+					<li class="answer"></li>
+					<li class="answer"></li>
+					<li class="answer"></li>
+					<li class="answer"></li>
+				</ul>
+			</div>
+		
+			<div id="quiz1">
+				<!--
+				<div id="stage1">
+				<input type="submit" value="Change Stage" id="btnstage1" class="btnstage">
+					<span class="stage1">Stage 1</span>
+				</div>
+				<div id="questions1">
+					<span class="question1"> What is the Sun?
+					</span>
+				</div>
+				
+				<div id="answers1">
+					<label class="number">1.</label> <span class="answer">A Star</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">A Planet</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">A Food</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">A Big Bulb</span>
+					<br /><br />			
+				</div>
+				-->
+				<div id="questions1_1">
+					<span class="question1_1"> What is a Tiger?
+					</span>
+				</div>
+				
+				<div id="answers1_1">
+					<label class="number">1.</label> <span class="answer">A Car</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">A Sandwich</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">An animal</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">A Food</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions1_2">
+					<span class="question1_2"> Where is Paris?
+					</span>
+				</div>
+				
+				<div id="answers1_2">
+					<label class="number">1.</label> <span class="answer">In Antarctica</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">In your Fridge</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">On the Moon</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">In France</span>
+					<br /><br />			
+				</div>
+				
+				<div id="submit1">
+					<input type="submit" value="1" id="btn1" class="buttons1"/>
+					<br /><br />
+					<input class="buttons1"  id="btn2" type="submit" value="2" />
+					<br /><br />
+					<input class="buttons1" id="btn3" type="submit" value="3" />
+					<br /><br />
+					<input class="buttons1" id="btn4" type="submit" value="4" />
+				</div>
+                 
+			</div>
+			
+
+			<div id="slides1">
+				<div id="slides_1">
+				</div>
+				<div id="slides_2">
+				</div>
+				<div id="slides_3">
+				</div>			
+			</div>
+
+			<div id="ticks1">
+				<div id="tick_1">
+				</div>
+				<div id="tick_2">
+				</div>
+				<div id="tick_3">
+				</div>			
+			</div>
+
+
+		</div>
+		
+		<div id="quiz_container2">
+
+			<div id="quiz2">
+				<div id="stage2">
+					<input type="submit" value="Change Stage" id="btnstage2" class="btnstage">
+					<span class="stage2">Stage 2</span>
+					</div>
+				<div id="questions2">
+					<span class="question2"> Where do Octopus Live?
+					</span>
+				</div>
+				
+				<div id="answers2">
+					<label class="number">1.</label> <span class="answer">The Moon</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">Mars</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Your Fridge</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">In the Ocean</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions2_1">
+					<span class="question2_1"> What is a Courgette?</span>
+				</div>
+				
+				<div id="answers2_1">
+					<label class="number">1.</label> <span class="answer">A Toy</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">An Animal</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">A Vegetable</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">A Planet</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions2_2">
+					<span class="question2_2">What is the Moon</span>
+				</div>
+				
+				<div id="answers2_2">
+					<label class="number">1.</label> <span class="answer">A Piece of Cheese</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">A Piece of Cardboard</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Earth's Satellite</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">A Lamp</span>
+					<br /><br />			
+				</div>
+				
+				<div id="submit2">
+					<input type="submit" value="1" id="btn1" class="buttons"/>
+					<br /><br />
+					<input class="buttons"  id="btn2" type="submit" value="2" />
+					<br /><br />
+					<input class="buttons" id="btn3" type="submit" value="3" />
+					<br /><br />
+					<input class="buttons" id="btn4" type="submit" value="4" />
+				</div>
+                 
+			</div>
+			
+
+			<div id="slides2">
+				<div id="slides_1">
+				</div>
+				<div id="slides_2">
+				</div>
+				<div id="slides_3">
+				</div>			
+			</div>
+
+			<div id="ticks2">
+				<div id="tick_1">
+				</div>
+				<div id="tick_2">
+				</div>
+				<div id="tick_3">
+				</div>			
+			</div>
+
+
+		</div>
+		
+		<div id="quiz_container3">
+
+			<div id="quiz3">
+				<div id="stage3">
+					<span class="stage3">Stage 3</span>
+					</div>
+				<div id="questions3">
+					<span class="question3"> What is Cinderella?
+					</span>
+				</div>
+				
+				<div id="answers3">
+					<label class="number">1.</label> <span class="answer">A Star</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">A Planet</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">A Food</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">A Princess</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions3_1">
+					<span class="question3_1"> Who's Mickey Mouses' Best Friend?</span>					
+				</div>
+				
+				<div id="answers3_1">
+					<label class="number">1.</label> <span class="answer">Peppa Pig</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">Goofy</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Scooby-Doo</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">Darth Vader</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions3_2">
+					<span class="question3_2"> What Color is A Carrot</span>					
+				</div>
+				
+				<div id="answers3_2">
+					<label class="number">1.</label> <span class="answer">Pink</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">Blue</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Black</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">Orange</span>
+					<br /><br />			
+				</div>
+				
+				<div id="submit">
+					<input type="submit" value="1" id="btn1" class="buttons"/>
+					<br /><br />
+					<input class="buttons"  id="btn2" type="submit" value="2" />
+					<br /><br />
+					<input class="buttons" id="btn3" type="submit" value="3" />
+					<br /><br />
+					<input class="buttons" id="btn4" type="submit" value="4" />
+				</div>
+                 
+			</div>
+			
+
+			<div id="slides3">
+				<div id="slides_1">
+				</div>
+				<div id="slides_2">
+				</div>
+				<div id="slides_3">
+				</div>			
+			</div>
+
+			<div id="ticks3">
+				<div id="tick_1">
+				</div>
+				<div id="tick_2">
+				</div>
+				<div id="tick_3">
+				</div>			
+			</div>
+
+
+		</div>
+		
+		<div id="quiz_container4">
+
+			<div id="quiz4">
+				<div id="stage4">
+					<span class="stage4">Stage 4</span>
+					</div>
+				<div id="questions4">
+					<span class="question4"> What color is the Sky?</span>					
+				</div>
+				
+				<div id="answers4">
+					<label class="number">1.</label> <span class="answer">Pink</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">Blue</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Red</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">Yellow</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions4_1">
+					<span class="question4_1"> What color is the Sky?</span>					
+				</div>
+				
+				<div id="answers4_1">
+					<label class="number">1.</label> <span class="answer">Pink</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">Blue</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Red</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">Yellow</span>
+					<br /><br />			
+				</div>
+				
+				<div id="questions4">
+					<span class="question4"> What color is the Sky?</span>					
+				</div>
+				
+				<div id="answers4">
+					<label class="number">1.</label> <span class="answer">Pink</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">Blue</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">Red</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">Yellow</span>
+					<br /><br />			
+				</div>
+				
+				<div id="submit4">
+					<input type="submit" value="1" id="btn1" class="buttons"/>
+					<br /><br />
+					<input class="buttons"  id="btn2" type="submit" value="2" />
+					<br /><br />
+					<input class="buttons" id="btn3" type="submit" value="3" />
+					<br /><br />
+					<input class="buttons" id="btn4" type="submit" value="4" />
+				</div>
+                 
+			</div>
+			
+
+			<div id="slides4">
+				<div id="slides_1">
+				</div>
+				<div id="slides_2">
+				</div>
+				<div id="slides_3">
+				</div>			
+			</div>
+
+			<div id="ticks4">
+				<div id="tick_1">
+				</div>
+				<div id="tick_2">
+				</div>
+				<div id="tick_3">
+				</div>			
+			</div>
+
+
+		</div>
+		
+		<div id="quiz_container5">
+
+			<div id="quiz5">
+				<div id="stage5">
+					<span class="stage5">Stage 5</span>
+					</div>
+				<div id="questions5">
+					<span class="question5"> What is a Flamingo?
+					</span>
+				</div>
+				
+				<div id="answers5">
+					<label class="number">1.</label> <span class="answer">A Star</span>
+					<br /><br />
+
+					<label class="number">2.</label>  <span class="answer">A Planet</span>
+					<br /><br />
+
+					<label class="number">3.</label>  <span class="answer">A Food</span>
+					<br /><br />
+					<label class="number">4.</label>  <span class="answer">A Bird</span>
+					<br /><br />			
+				</div>
+				
+				<div id="submit5">
+					<input type="submit" value="1" id="btn1" class="buttons"/>
+					<br /><br />
+					<input class="buttons"  id="btn2" type="submit" value="2" />
+					<br /><br />
+					<input class="buttons" id="btn3" type="submit" value="3" />
+					<br /><br />
+					<input class="buttons" id="btn4" type="submit" value="4" />
+				</div>
+                 
+			</div>
+			
+
+			<div id="slides5">
+				<div id="slides_1">
+				</div>
+				<div id="slides_2">
+				</div>
+				<div id="slides_3">
+				</div>			
+			</div>
+
+			<div id="ticks5">
+				<div id="tick_1">
+				</div>
+				<div id="tick_2">
+				</div>
+				<div id="tick_3">
+				</div>			
+			</div>
+
+
+		</div>
+
+		<div id="stages_container">
+					<div id="stages">
+						<p class="stage1">Stage 1</p>
+						<p class="stage2">Stage 2</p>
+						<p class="stage3">Stage 3</p>
+						<p class="stage4">Stage 4</p>
+						<p class="stage5">Stage 5</p>
+					</div>
+
+					<div id="stage1_tick">
+					</div>
+					<div id="stage2_tick">
+					</div>
+					<div id="stage3_tick">
+					</div>
+					<div id="stage4_tick">
+					</div>
+					<div id="stage5_tick">
+					</div>
+
+					<div id="score_text">
+					<span class="text_blk_30">SCORE</span>
+					</div>
+
+					<div id="score">
+						<span class="text_blk_25">250</span>
+					</div>
+		</div>
+
+		<div id="badges">
+			<div id="badges_text">
+				<span class="text_blk_18">Add your <span class="text_pink_18">CRAZY</span> 
+				<span class="text_blue_18">CREATURES</span> Here!</span>
+			</div>
+
+			<div id="five_badges">
+				<div id="badge_1" class="badge"><img src="images/octopus_badge.png"></div>
+					<div id="badge_2" class="badge"><img src="images/monkey_badge.png"></div>
+						<div id="badge_3" class="badge"><img src="images/flamingo_badge.png"></div>
+							<div id="badge_4" class="badge"><img src="images/cat_badge.png"></div>
+								<div id="badge_5" class="badge"><img src="images/question_mark.png"></div>
+				
+			</div>
+
+		</div>
+			
+				
+
+				<div id="big_buttons">
+					<div id="again_button">
+					<span class="text_blk_18">Make More <br />
+						<span class="text_pink_18">CRAZY</span> CREATURES!</span>
+					</div>
+
+					<div id="next_button">
+					<span class="text_yellow_30">Next Stage!</span>										
+					</div>
+
+				</div>
+
+	</div>
+
+</body>
+</html>
