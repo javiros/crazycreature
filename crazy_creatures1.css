@@ -1,0 +1,457 @@
+body {
+  background-image: url(images/rainbow13.png);
+    margin-top: 15px;
+}
+
+
+#container {
+  width: 1000px;
+  height: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 15px solid #ffff99;
+  border-bottom: 15px solid #999900;
+  border-left: 15px solid #cccc00;
+  border-right: 15px solid #cccc00;
+  background-color: #ffff33;
+}
+
+#banner {
+  width: 700px;
+  height: 200px;
+  background-image: url(images/creature_banner2.png);
+  float: left;
+}
+
+#text {
+  width: 290px;
+  height: 180px;
+  float: left;
+  padding-left: 10px;
+  padding-top: 20px;
+}
+
+.text_blk_18 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 18px;
+  color: #000;
+}
+
+.text_blk_30 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 30px;
+  color: #000;
+}
+
+.text_blk_25 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 25px;
+  color: #000;
+}
+
+.text_white_30 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 30px;
+  color: #fff;
+}
+
+.text_yellow_30 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 30px;
+  color: #ffff00;
+}
+
+.text_red_18 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.text_pink_18 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 18px;
+  color: #ff00ff;
+}
+
+.text_blue_18 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 18px;
+  color: #0000ff;
+}
+
+.text_red_24 {
+  font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+  font-size: 24px;
+  color: #ff0000;
+}
+
+#quiz_container2, #quiz_container3, #quiz_container4, #quiz_container5  {
+  display: none;
+}
+
+#quiz_container1, #quiz_container2, #quiz_container3, #quiz_container4, #quiz_container5 {
+  width: 700px;
+  height: 500px;
+  float: left;
+}
+
+#quiz1, #quiz2, #quiz3, #quiz4, #quiz5 {
+  width: 350px;
+  height: 500px;
+  float: left;
+}
+
+#stage1, #stage2, #stage3, #stage4, #stage5 {
+  width: 320px;
+  height: 40px;
+  float: left;
+  padding-left: 30px;
+}
+
+#questions1, #questions1_1, #questions1_2, #questions3, #questions4, #questions5 {
+  width: 350px;
+  height: 60px;
+  float: left;
+}
+#questions1_1, #questions1_2 {
+  display: none;
+}
+#question2 {
+  width: 350px;
+  height: 60px;
+  float: left;
+  font-size: 10px;
+}
+#answers1, #answers1_1, #answers1_2, #answers2, #answers3, #answers4, #answers5 {
+  width: 270px;
+  height: 340px;
+  padding: 30px 0px 30px 30px;
+  float: left;
+}
+
+#answers1_1, #answers1_2  {
+  display: none;
+}
+
+#submit1, #submit2, #submit3, #submit4, #submit5 {
+  width: 30px;
+  height: 340px;
+  padding: 30px 10px 30px 10px;
+  float: left;
+}
+
+.buttons1, .buttons2, .buttons3, .buttons4, .buttons5 {
+  float: right;
+  margin: 20px 0px 35px 0px;
+}
+
+#ticks1{
+  display:none;
+  }
+#tick_1{
+  display:none;
+  }
+  
+#tick_2{
+  display:none;
+  }
+
+
+
+#slides1, #slides2, #slides3, #slides4, #slides5{
+  width: 260px;
+  height: 430px;
+  background-color: #17e917;
+  float: left;
+  border-top: 10px solid #00ff00;
+  border-bottom: 10px solid #00ff00;
+  border-left: 10px solid #00cc00;
+  border-right: 10px solid #00cc00;
+    margin-bottom: 50px;
+}
+
+#slides_1 {
+  width: 260px;
+  height: 140px;
+  background-color: #66ff66;
+  float: left;
+  background-image: url(images/monkey_1.png);
+  border-bottom: 5px solid #00ff00;
+  display:none;
+}
+#slides_2 {
+  width: 260px;
+  height: 140px;
+  background-color: #66ff66;
+  float: left;
+  background-image: url(images/monkey_2.png);
+  border-bottom: 5px solid #00ff00;
+  display:none;
+}
+#slides_3 {
+  width: 260px;
+  height: 140px;
+  background-color: #66ff66;
+  float: left;
+  background-image: url(images/flamingo_3.png);
+  display:none;
+}
+
+#ticks {
+  width: 70px;
+  height: 450px;
+  float: left;
+}
+
+#tick_1 {
+  width: 70px;
+  height: 150px;
+  float: left;
+  background-image: url(images/green_tick.png);
+}
+
+#tick_2 {
+  width: 70px;
+  height: 150px;
+  float: left;
+  background-image: url(images/green_tick.png);
+}
+
+#tick_3 {
+  width: 70px;
+  height: 150px;
+  float: left;
+  background-image: url(images/green_tick.png);
+}
+
+#tick_none {
+  width: 70px;
+  height: 150px;
+  float: left;
+}
+
+#cross_1 {
+  width: 70px;
+  height: 150px;
+  float: left;
+  background-image: url(images/red_x.png);
+}
+
+
+#cross_2 {
+  width: 70px;
+  height: 150px;
+  float: left;
+  background-image: url(images/red_x.png);
+}
+
+#cross_3 {
+  width: 70px;
+  height: 150px;
+  float: left;
+  background-image: url(images/red_x.png);
+  margin-bottom: 50px;
+}
+
+.question1, .question1_1, .question1_2 {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 36px;
+	text-align: left;
+	color: #585858;
+	margin: 20px 0px 30px 30px;
+}
+
+.answer {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 36px;
+	text-align: left;
+	color: #0972f4;
+}
+.number {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 40px;
+	text-align: left;
+	color: #b416ef;
+}
+
+#stages_container {
+  width: 300px;
+  height: 500px;
+  float: left;
+}
+
+#stages {
+  width: 170px;
+  height: 400px;
+  padding-left: 30px;
+  font-weight: bold;
+  float: left;
+  font-size: 36px;
+}
+
+.stage1 {
+  	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 36px;
+	text-align: left;
+	color: #00ff00;
+}
+
+.stage2 {
+  	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 36px;
+	text-align: left;
+	color: #ff9900;
+}
+
+.stage3 {
+  	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 36px;
+	text-align: left;
+	color: #0000ff;
+}
+
+.stage4 {
+  	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 36px;
+	text-align: left;
+	color: #ff00cc;
+}
+
+.stage5 {
+  	font-family: "Rockwell Extra Bold", "Rockwell Bold", monospace;
+	font-size: 36px;
+	text-align: left;
+	color: #ff0000;
+}
+
+#stage1_tick {
+	width: 100px;
+ 	height: 80px;
+ 	background-image: url(images/stage_tick.png);
+ 	float: left;
+}
+
+#stage2_tick {
+	width: 100px;
+ 	height: 80px;
+ 	background-image: url(images/stage_tick.png);
+ 	float: left;
+}
+
+#stage3_tick {
+	width: 100px;
+ 	height: 80px;
+ 	float: left;
+}
+
+#stage4_tick {
+	width: 100px;
+ 	height: 80px;
+ 	float: left;
+}
+
+#stage5_tick {
+	width: 100px;
+ 	height: 80px;
+ 	float: left;
+}
+
+#score_text {
+  width: 120px;
+  height: 70px;
+    padding-top: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  float: left;
+  font-size: 36px;
+}
+
+#score {
+  width: 55px;
+  height: 30px;
+  margin:15px;
+  padding-top: 10px;
+  padding-left: 10px;
+  float: left;
+  border-top: 10px solid #00ff00;
+  border-bottom: 10px solid #00ff00;
+  border-left: 10px solid #00cc00;
+  border-right: 10px solid #00cc00;
+   background-color: #66ff66;
+}
+
+#badges {
+  width: 700px;
+  height: 200px;
+  float: left;
+}
+
+#badges_text {
+  width: 670px;
+  height: 30px;
+  float: left;
+  padding-left: 30px;
+}
+
+#right_side {
+  width: 300px;
+  height: 700px;
+  float: left;
+}
+
+#five_badges {
+  width: 650px;
+  height: 170px;
+  float: left;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+
+.badge {
+  width: 100px;
+  height: 140px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 10px;
+  border-top: 5px solid #00ff00;
+  border-bottom: 5px solid #00ff00;
+  border-left: 5px solid #00cc00;
+  border-right: 5px solid #00cc00;
+   background-color: #00ffff;
+}
+
+
+#big_buttons {
+  width: 300px;
+  height: 200px;
+  float: left;
+}
+
+#again_button {
+  width: 230px;
+  height: 50px;
+  border-top: 10px solid #99ffff;
+  border-bottom: 10px solid #0099ff;
+  border-left: 10px solid #33ccff;
+  border-right: 10px solid #33ccff;
+    padding-top: 5px;
+ text-align: center;
+ vertical-align: middle;
+ margin-bottom: 30px;
+ background-color: #00ffff;
+ float: left;
+}
+
+#next_button {
+  width: 230px;
+  height: 45px;
+  border-top: 10px solid #ff9999;
+  border-bottom: 10px solid #990033;
+  border-left: 10px solid #cc0033;
+  border-right: 10px solid #cc0033;
+  background-color: #ff0000;
+  padding-top: 10px;
+  text-align: center;
+  float: left;
+}
