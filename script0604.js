@@ -1,13 +1,18 @@
 
 $(document).on("ready", function(){
   var questions = [
-	{"text": "What's the capital of Italy", "answers": ["Rome", "Paris", "Oslo", "Dublin"], "correct": "Rome" },
+	{"text": "What's the capital of Italy", "answers": ["Rome", "Paris", "Oslo", "Dublin"], "correct": "Rome", "picture": "images/monkey_1.png" },
 	{"text": "What is the capital of Germany", "answers": ["Zagreb", "London", "Viena", "Berlin"], "correct": "Berlin" },
 	{"text": "What is the capital of Ireland", "answers": ["Belfast", "Dublin", "Chaco", "Madrid"], "correct": "Dublin" },
 	{"text": "What is the capital of Germany", "answers": ["Zagreb", "London", "Viena", "Berlin"], "correct": "Berlin" },
 
   ];
+  
 	var score = 0
+	var slide = ["images/monkey_1.png", "images/monkey_2.png"]
+
+	
+	  
 	var display_question = (function () {
 		var question = questions[score];
 		
@@ -21,9 +26,20 @@ $(document).on("ready", function(){
 		$("#answer li").on("click", validate_answer);
 	});
 	
+
+	
+	
+	
+	
 	var validate_answer = (function () {
+	
 		if ($(this).text() == questions[score].correct) {
 			score++;
+			
+		
+			
+			 
+			
 			if (questions.length > score) {
 				display_question();
 				countdown = max_countdown;
@@ -46,7 +62,7 @@ $(document).on("ready", function(){
 	});
 	
 	var display_score = (function (){ 
-			$("#score").text(score * 100);
+			$(".text_blk_25").text(score * 100);
 			
 	});
 	
@@ -63,8 +79,19 @@ $(document).on("ready", function(){
 				display_error();
 			}
 			}, 1000);
+			
+			
+	var picture_change = (function(){
+	if (score == 2) {
+	$('#slides_1').slideDown(3000);
+            $('#ticks').fadeIn(4000);
+			}
+	
+	
+	});
 	
 	display_question();
 	display_score();
+
 
 });	
