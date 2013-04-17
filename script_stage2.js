@@ -1,14 +1,17 @@
 
 $(document).on("ready", function(){
   var questions = [
-	{"text": "What's the capital of Italy?", "answers": ["Rome", "Paris", "Oslo", "Dublin"], "correct": "Rome", "picture": "images/monkey_1.png" },
-	{"text": "What is the capital of Germany?", "answers": ["Zagreb", "London", "Viena", "Berlin"], "correct": "Berlin" },
-	{"text": "What is the capital of Ireland?", "answers": ["Belfast", "Dublin", "Chaco", "Madrid"], "correct": "Dublin" },
+  {},
+  {},
+  {},
+	{"text": "What is the Sun?", "answers": ["A Star", "A Planet", "A Food", "A Big Bulb"], "correct": "A Star", "picture": "images/monkey_1.png" },
+	{"text": "Where is Paris?", "answers": ["In Antartica", "In Your Fridge", "On the Moon", "In France"], "correct": "In France" },
+	{"text": "What is a Flamingo?", "answers": ["A Fairy", "A Plant", "A Bird", "A Fluffy Toy?"], "correct": "A Bird" },
   ];
   
-	var score = 0
-	var slide = ["images/monkey_1.png", "images/monkey_2.png", "images/monkey_3.png"]
-	var sound = ["monkeysound.wav"]
+	var score = 3
+	var slide = ["images/octopus_1.png", "images/octopus_2.png", "images/octopus_3.png"]
+	var sound = ["bubbles.wav"]
 	
 
 	 
@@ -31,15 +34,15 @@ $(document).on("ready", function(){
 		if ($(this).text() == questions[score].correct) {
 			score++;
 			
-		$('#slides_' + score).slideDown(3000);
-		$('body').append('<embed src="sounds/monkeysound.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		$('#slides2_' + score).slideDown(3000);
+		$('body').append('<embed src="sounds/bubbles.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
             $('#ticks').fadeIn(4000);
 			
 			if (questions.length > score) {
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("you are great quiz finished!");
+				$("#question").text("Brilliant! On to Stage 3");
 				$("#answer").empty();
 				clearInterval(countdown_interval);
 			}	

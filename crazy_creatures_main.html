@@ -3,14 +3,30 @@
    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
+<<<<<<< HEAD
+   
+<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>   
+
+<title>Crazy Creatures</title>
+=======
    <title>Crazy Creatures</title>
+>>>>>>> 3d924629dacac1211cfc36cd7dbd96b258e97bec
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
    <link rel="stylesheet" type="text/css" href="crazy_creatures1.css"/>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
    <script src="script0604.js"></script>
+    <script src="jquerySides.js"></script>
    
    </head>
 <body>
+	<div id="mainContainer">
+		<div id="left">
+		<div id="leftSide1"></div>
+		<div id="leftSide2"></div>
+		<div id="leftSide3"></div>
+		<div id="leftSide4"></div>
+		<div id="leftSide5"></div>
+		</div>
 	<div id= "container">
 
 		<div id="banner">
@@ -24,25 +40,23 @@
 			Let's make a <span class="text_red_18">MONKEY</span><br />
 			With Only 3 Questions!
 		</div>
-	
-		<div id="countdown"></div>
-		<div id="quiz_container1">
-			<div id="quiz">
-				<div id="question"></div>
-				
-			</div>
 		
-			<div id="quiz1">
-				
-				<div id="stage1">
-				
+		
+		<div id="quiz_container">
+
+			<div id="quiz">
+
+				<div id="stageTop">
+					<div id="stage">			
 					<span class="stage1">Stage 1</span>
+					</div>
+						<div id="countdown">
+						</div>
 				</div>
-				<div id="questions1">
-					<span class="question1"> 
-					</span>
-				</div>
-				
+
+			<div id="question" class="question"></div>
+
+				<div id="answer">
 				<ul id="answer">
 					<li class="number">1.</li> <span class="answer"></span>
 					<br /><br />
@@ -55,20 +69,10 @@
 					<li class="number">4.</li>  <span class="answer"></span>
 					<br /><br />			
 				</ul>
-												
-				<div id="submit1">
-					<input type="submit" value="1" id="btn1" class="buttons1"/>
-					<br /><br />
-					<input class="buttons1"  id="btn2" type="submit" value="2" />
-					<br /><br />
-					<input class="buttons1" id="btn3" type="submit" value="3" />
-					<br /><br />
-					<input class="buttons1" id="btn4" type="submit" value="4" />
-				</div>
-                 
+				</div>		
+
 			</div>
 			
-
 			<div id="slides1">
 				<div id="slides_1">
 				</div>
@@ -87,20 +91,8 @@
 				</div>			
 			</div>
 
-
 		</div>
 		
-				<div id="tick_1">
-				</div>
-				<div id="tick_2">
-				</div>
-				<div id="tick_3">
-				</div>			
-			</div>
-
-
-		</div>
-
 		<div id="stages_container">
 					<div id="stages">
 						<p class="stage1">Stage 1</p>
@@ -126,10 +118,11 @@
 					</div>
 
 					<div id="score">
-						<span class="text_blk_25">250</span>
+						<span class="text_blk_25"></span>
 					</div>
 		</div>
 
+	<div id="bottom">
 		<div id="badges">
 			<div id="badges_text">
 				<span class="text_blk_18">Add your <span class="text_pink_18">CRAZY</span> 
@@ -137,18 +130,16 @@
 			</div>
 
 			<div id="five_badges">
-				<div id="badge_1" class="badge"><img src="images/octopus_badge.png"></div>
-					<div id="badge_2" class="badge"><img src="images/monkey_badge.png"></div>
-						<div id="badge_3" class="badge"><img src="images/flamingo_badge.png"></div>
-							<div id="badge_4" class="badge"><img src="images/cat_badge.png"></div>
+				<div id="badge_1" class="badge"><img src="images/question_mark.png"></div>
+					<div id="badge_2" class="badge"><img src="images/question_mark.png"></div>
+						<div id="badge_3" class="badge"><img src="images/question_mark.png"></div>
+							<div id="badge_4" class="badge"><img src="images/question_mark.png"></div>
 								<div id="badge_5" class="badge"><img src="images/question_mark.png"></div>
 				
 			</div>
 
 		</div>
 			
-				
-
 				<div id="big_buttons">
 					<div id="again_button">
 					<span class="text_blk_18">Make More <br />
@@ -160,8 +151,8 @@
 					</div>
 
 				</div>
-
 	</div>
-
+</div>
+</div>
 </body>
 </html>

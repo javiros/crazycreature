@@ -3,48 +3,141 @@ body {
     margin-top: 15px;
 }
 #mainContainer {
-  width: 1300px;
-  height: 900px;
+  width: 1330px;
+  height: 930px;
   margin-right: auto;
   margin-left: auto;
 }
 
-#left{
+#left_under{
   width: 150px;
   height: 900px;
     float: left;
+      background-image: url(images/tree_trunk1a.png);
+      z-index:-1;
+      position:absolute;
+}
+#left_over{
+  width: 150px;
+  height: 900px;
+    float: left;
+      background-image: url(images/tree_leaves1a.png);
+      z-index:1;
+      position:absolute;
+}
+
+#right{
+  width: 150px;
+  height: 900px;
+     float: right;
+}
+#right_under{
+  width: 150px;
+  height: 900px;
+    float: left;
+      background-image: url(images/tree_trunk1b.png);
+      z-index:-2;
+      position:absolute;
+}
+#right_over{
+  width: 150px;
+  height: 900px;
+    float: left;
+      background-image: url(images/tree_leaves1b.png);
+      z-index:2;
+      position:absolute;
 }
 
 #leftSide1{
   width: 150px;
   height: 180px;
     float: left;
-  background-image: url(images/monkey_1.png);
+  background-image: url(images/monkey_slide_left.png);
   display:none;
+  position: absolute;
 }
 
 #leftSide2{
   width: 150px;
   height: 180px;
     float: left;
+    margin-top: 180px;
+        background-image: url(images/cat_slide_left.png);
+  display:none;
+  position: absolute;
 }
 #leftSide3{
   width: 150px;
   height: 180px;
     float: left;
+     margin-top: 360px;
+    background-image: url(images/octopus_slide_left.png);
+  display:none;
+  position: absolute;
 }
 #leftSide4{
   width: 150px;
   height: 180px;
     float: left;
+    margin-top: 540px;
+        background-image: url(images/stripeBird_left.png);
+  display:none;
+ position: absolute;
 }
 #leftSide5{
   width: 150px;
   height: 180px;
     float: left;
+    margin-top: 720px;
+        background-image: url(images/flamingo_slide_left.png);
+  display:none;
 }
 
-#container {
+#rightSide1{
+  width: 150px;
+  height: 180px;
+    float: left;
+  background-image: url(images/stripeBird_right.png);
+  display:none;
+  position: absolute;
+}
+
+#rightSide2{
+  width: 150px;
+  height: 180px;
+    float: left;
+    margin-top: 180px;
+        background-image: url(images/monkey_slide_right.png);
+  display:none;
+  position: absolute;
+}
+#rightSide3{
+  width: 150px;
+  height: 180px;
+    float: left;
+     margin-top: 360px;
+    background-image: url(images/stripeBird_right.png);
+  display:none;
+  position: absolute;
+}
+#rightSide4{
+  width: 150px;
+  height: 180px;
+    float: left;
+    margin-top: 540px;
+        background-image: url(images/monkey_slide_right.png);
+  display:none;
+ position: absolute;
+}
+#rightSide5{
+  width: 150px;
+  height: 180px;
+    float: left;
+    margin-top: 720px;
+        background-image: url(images/octopus_slide_right.png);
+  display:none;
+}
+#container1 {
   width: 1000px;
   height: 900px;
   margin-right: auto;
@@ -54,6 +147,17 @@ body {
   border-left: 15px solid #cccc00;
   border-right: 15px solid #cccc00;
   background-color: #ffff33;
+}
+#container2 {
+  width: 1000px;
+  height: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  border-top: 15px solid #FFC0CB;
+  border-bottom: 15px solid #8B668B;
+  border-left: 15px solid #DB7093;
+  border-right: 15px solid #DB7093;
+  background-color: #FFE1FF;
 }
 
 #banner {
@@ -72,56 +176,72 @@ body {
 }
 
 .text_blk_18 {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+ font-family: 'Nunito', sans-serif;
   font-size: 18px;
   color: #000;
 }
 
 .text_blk_30 {
- font-family:'Autour One', cursive;  
- font-size: 30px;
+  font-family: 'Happy Monkey', cursive;
+  font-size: 30px;
+  color: #000;
+}
+
+.text_blk_22 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
   color: #000;
 }
 
 .text_blk_25 {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  font-family: 'Nunito', sans-serif;
   font-size: 25px;
   color: #000;
 }
-
 .text_white_30 {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+font-family: 'Happy Monkey', cursive;
   font-size: 30px;
   color: #fff;
 }
 
 .text_yellow_30 {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  font-family: 'Happy Monkey', cursive;
   font-size: 30px;
   color: #ffff00;
 }
 
+.text_yellow_30_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffff00;
+}
+
 .text_red_18 {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  font-family: 'Happy Monkey', cursive;
   font-size: 18px;
   color: #ff0000;
 }
 
-.text_pink_18 {
- font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
-  font-size: 18px;
+.text_pink_24 {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 24px;
   color: #ff00ff;
+}
+.text_blue_24 {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 24px;
+  color: #0000ff;
 }
 
 .text_blue_18 {
-font-family:'Merienda', cursive;
+ font-family: 'Nunito', sans-serif;
   font-size: 18px;
-  font-weight:bold;
   color: #0000ff;
 }
 
 .text_red_24 {
-  font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", Charcoal, "Helvetica Inserat", "Bitstream Vera Sans Bold", "Arial Black", sans serif;
+  font-family: 'Happy Monkey', cursive;
   font-size: 24px;
   color: #ff0000;
 }
@@ -158,7 +278,7 @@ font-family:'Merienda', cursive;
 
 #answer {
   width: 270px;
-  height: 340px;
+  height: 255px;
   padding-left: 30px;
   float: left;
 }
@@ -178,7 +298,7 @@ font-family:'Merienda', cursive;
 
 
 
-#slides1  {
+#slides  {
   width: 260px;
   height: 430px;
   background-color: #17e917;
@@ -214,6 +334,33 @@ font-family:'Merienda', cursive;
   background-color: #66ff66;
   float: left;
   background-image: url(images/monkey_3.png);
+  display:none;
+}
+
+#slides2_1 {
+  width: 260px;
+  height: 140px;
+  background-color: #66ff66;
+  float: left;
+  background-image: url(images/octopus_1.png);
+  border-bottom: 5px solid #00ff00;
+  display:none;
+}
+#slides2_2 {
+  width: 260px;
+  height: 140px;
+  background-color: #66ff66;
+  float: left;
+  background-image: url(images/octopus_2.png);
+  border-bottom: 5px solid #00ff00;
+  display:none;
+}
+#slides2_3 {
+  width: 260px;
+  height: 140px;
+  background-color: #66ff66;
+  float: left;
+  background-image: url(images/octopus_3.png);
   display:none;
 }
 
@@ -275,7 +422,7 @@ font-family:'Merienda', cursive;
 
 .question  {
 	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 30px;
+	font-size: 35px;
 	text-align: left;
 	color: #0972f4;
 
@@ -319,73 +466,55 @@ li {
 }
 
 .stage1 {
-  	font-family:'Autour One', cursive;
-	font-size: 36px;
-	font-weight:bold;
+  	font-family: 'Autour One', cursive;
+	font-size: 34px;
 	text-align: left;
 	color: #00ff00;
 }
 
 .stage2 {
   	font-family: 'Autour One', cursive;
-	font-size: 36px;
-	font-weight:bold;
+	font-size: 34px;
 	text-align: left;
 	color: #ff9900;
 }
 
 .stage3 {
   	font-family: 'Autour One', cursive;
-	font-size: 36px;
+	font-size: 34px;
 	text-align: left;
 	color: #0000ff;
 }
 
 .stage4 {
   	font-family: 'Autour One', cursive;
-	font-size: 36px;
+	font-size: 34px;
 	text-align: left;
 	color: #ff00cc;
 }
 
 .stage5 {
   	font-family: 'Autour One', cursive;
-	font-size: 36px;
+	font-size: 34px;
 	text-align: left;
 	color: #ff0000;
 }
 
-#stage1_tick {
+.stage_tick_none {
+  width: 100px;
+  height: 80px;
+  float: left;
+  display:none;
+}
+
+.stage_tick {
 	width: 100px;
  	height: 80px;
  	background-image: url(images/stage_tick.png);
  	float: left;
 }
 
-#stage2_tick {
-	width: 100px;
- 	height: 80px;
 
- 	float: left;
-}
-
-#stage3_tick {
-	width: 100px;
- 	height: 80px;
- 	float: left;
-}
-
-#stage4_tick {
-	width: 100px;
- 	height: 80px;
- 	float: left;
-}
-
-#stage5_tick {
-	width: 100px;
- 	height: 80px;
- 	float: left;
-}
 
 #score_text {
   width: 120px;
@@ -404,6 +533,10 @@ li {
   padding-top: 10px;
   padding-left: 10px;
   float: left;
+  font-family: tahoma;
+	font-size: 1.8em;
+	font-weight:bold;
+	color: red;
   border-top: 10px solid #00ff00;
   border-bottom: 10px solid #00ff00;
   border-left: 10px solid #00cc00;
@@ -415,6 +548,10 @@ li {
   width: 55px;
   height: 40px;
   float: left;
+  font-family: tahoma;
+	font-size: 1.8em;
+	font-weight:bold;
+	color: red;
   border-top: 10px solid #00ff00;
   border-bottom: 10px solid #00ff00;
   border-left: 10px solid #00cc00;
@@ -492,15 +629,18 @@ li {
 }
 
 #next_button {
-  width: 230px;
+  width: 205px;
   height: 45px;
   border-top: 10px solid #ff9999;
   border-bottom: 10px solid #990033;
   border-left: 10px solid #cc0033;
   border-right: 10px solid #cc0033;
   background-color: #ff0000;
-  padding-top: 10px;
+  padding-top: 0px;
+  margin-left:20px;
   text-align: center;
   float: left;
+  display: none;
+ 
 }
 

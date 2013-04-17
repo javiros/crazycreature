@@ -1,9 +1,9 @@
 
 $(document).on("ready", function(){
   var questions = [
-	{"text": "What's the capital of Italy?", "answers": ["Rome", "Paris", "Oslo", "Dublin"], "correct": "Rome", "picture": "images/monkey_1.png" },
-	{"text": "What is the capital of Germany?", "answers": ["Zagreb", "London", "Viena", "Berlin"], "correct": "Berlin" },
-	{"text": "What is the capital of Ireland?", "answers": ["Belfast", "Dublin", "Chaco", "Madrid"], "correct": "Dublin" },
+	{"text": "What is a Tiger?", "answers": ["A Car", "A Sandwich", "An Animal", "A Food"], "correct": "An Animal", "picture": "images/monkey_1.png" },
+	{"text": "Where do Octopus live?", "answers": ["The Moon", "Germany", "Your Fridge", "The Ocean"], "correct": "The Ocean" },
+	{"text": "What is Cinderella?", "answers": ["A Star", "A Princess", "A Fairy", "A Game"], "correct": "A Princess" },
   ];
   
 	var score = 0
@@ -39,7 +39,8 @@ $(document).on("ready", function(){
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("you are great quiz finished!");
+				$("#question").text("Brilliant! Now onto the Next Stage!");
+				$("#next_button").fadeIn(1000);
 				$("#answer").empty();
 				clearInterval(countdown_interval);
 			}	
@@ -58,6 +59,9 @@ $(document).on("ready", function(){
 	
 	var display_score = (function (){ 
 			$(".text_blk_25").text(score * 100);
+			//if (display_score == 300) {
+  		//$("#next_button").show();
+		//}
 			
 	});
 	
@@ -81,9 +85,11 @@ $(document).on("ready", function(){
 	$('#slides_1').slideDown(3000);
             $('#ticks').fadeIn(4000);
 			}
-	
-	
+
 	});
+
+	
+
 	
 	display_question();
 	display_score();
