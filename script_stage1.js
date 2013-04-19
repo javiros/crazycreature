@@ -56,11 +56,12 @@ $(document).on("ready", function(){
           
 		  display_question();
 		  
-		  $("#answer").fadeOut(10);
-		  $("#try").text("try again").fadeIn(1000).fadeOut(2000);
-		  $("#answer").fadeIn(8000);
+		  $("#answer").fadeOut(500);
+		  $("#try").text("try again").fadeIn(100).fadeOut(2000);
+		  $("#answer").fadeIn(200);
 		 
 		  countdown --;
+
 		  
 	});
 	
@@ -73,7 +74,7 @@ $(document).on("ready", function(){
 			
 	});
 	
-	var max_countdown = 100;
+	var max_countdown = 60;
 	var countdown = max_countdown;
 	var display_countdown = (function() {
 		$("#countdown").text(countdown);
@@ -83,7 +84,10 @@ $(document).on("ready", function(){
 			display_countdown();
 			countdown--;
 			if(countdown < 0){
-				display_error();
+				$("#answer").empty();
+				$("#question").text("out of time");
+				clearInterval(countdown_interval);
+				
 			}
 			}, 1000);
 			
