@@ -1,16 +1,15 @@
 
 $(document).on("ready", function(){
+	$('#slides3').slideUp(10000);
   var questions = [
-	{"text": "What is the Sun?", "answers": ["A Star", "A Planet", "A Food", "A Big Bulb"], "correct": "A Star", "picture": "images/monkey_1.png" },
-	{"text": "Where is Paris?", "answers": ["In Antartica", "In Your Fridge", "On the Moon", "In France"], "correct": "In France" },
-	{"text": "What is a Flamingo?", "answers": ["A Fairy", "A Plant", "A Bird", "A Fluffy Toy?"], "correct": "A Bird" },
+	{"text": "Who am I?", "answers": ["A Dog", "A Cat", "A Bear", "A Panda"], "correct": "A Panda"},
+	
   ];
   
 	var score = 0
-  var slide = ["images/octopus_1.png", "images/octopus_2.png", "images/octopus_3.png"]
-	var sound = ["monkeysound.wav"]
-	
+	var slide = ["images/curtain_photo.png"]
 
+	
 	 
 	var display_question = (function () {
 		var question = questions[score];
@@ -25,23 +24,20 @@ $(document).on("ready", function(){
 		$("#answer li").on("click", validate_answer);
 	});
 	
-
 	var validate_answer = (function () {
 	
 		if ($(this).text() == questions[score].correct) {
 			score++;
-			
-		$('#slides2_' + score).slideDown(3000);
-		$('body').append('<embed src="sounds/bubbles.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
-            $('#ticks').fadeIn(4000);
-			
+					
+		$('body').append('<embed src="sounds/grizzlybear.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+           		
 			if (questions.length > score) {
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("Wow an Octopus! On to Stage 3");
+				$("#question").text("Hey it's a Panda! On to Stage 4");
 				$('#next_button').effect("shake", { times:2 }, 2000);
-				$('#slides').effect("bounce", { times:3 }, 2000);
+				$('#slides_panda').effect("bounce", { times:3 }, 2000);
 				$("#answer").empty();
 				clearInterval(countdown_interval);
 			}	
@@ -60,10 +56,11 @@ $(document).on("ready", function(){
 	
 	var display_score = (function (){ 
 			$(".text_blk_25").text(score * 100);
+		
 			
 	});
 	
-	var max_countdown = 100;
+	var max_countdown = 10;
 	var countdown = max_countdown;
 	var display_countdown = (function() {
 		$("#countdown").text(countdown);
@@ -76,19 +73,7 @@ $(document).on("ready", function(){
 				display_error();
 			}
 			}, 1000);
-			
-			
-	var picture_change = (function(){
-	if (score == 2) {
-	$('#slides_1').slideDown(3000);
-            $('#ticks').fadeIn(4000);
-			}
-
-	});
-
-	
-
-	
+		
 	display_question();
 	display_score();
 

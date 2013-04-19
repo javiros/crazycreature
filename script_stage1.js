@@ -39,8 +39,10 @@ $(document).on("ready", function(){
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("Brilliant! On to Stage 2");
-				$('#next_button').fadeIn(500);
+				$("#question").text("Look a Monkey! On to Stage 2");
+				$('#next_button').effect("shake", { times:2 }, 2000);
+				
+				$('#slides').effect("bounce", { times:3 }, 2000);
 				$("#answer").empty();
 				clearInterval(countdown_interval);
 			}	
@@ -51,26 +53,19 @@ $(document).on("ready", function(){
 
 	});
 	
-	
 	var display_error = (function() {
-          
-		  display_question();
-		  
-		  $("#answer").fadeOut(500);
-		  $("#try").text("try again").fadeIn(100).fadeOut(2000);
-		  $("#answer").fadeIn(200);
-		 
-		  countdown --;
-
-		  
-	});
 	
+		display_question();
+		$("#answer").fadeOut(500);
+		$("#try").text("try again").fadeIn(100).fadeOut(2000);
+
+		  $("#answer").fadeIn(200);
+		  countdown --;
+	});
 	
 	var display_score = (function (){ 
 			$(".text_blk_25").text(score * 100);
-			//if (display_score == 300) {
-  		//$("#next_button").show();
-		//}
+		
 			
 	});
 	
@@ -84,10 +79,10 @@ $(document).on("ready", function(){
 			display_countdown();
 			countdown--;
 			if(countdown < 0){
-				$("#answer").empty();
-				$("#question").text("out of time");
-				clearInterval(countdown_interval);
-				
+			$("#answer").empty();
+			$("#question").text("out of time");
+			clearInterval(countdown_interval);
+			
 			}
 			}, 1000);
 			
