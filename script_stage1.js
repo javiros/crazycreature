@@ -51,20 +51,17 @@ $(document).on("ready", function(){
 
 	});
 	
+	
 	var display_error = (function() {
-
-		  $("#question").text("click to try again");
-		   display_question();
-		  $("#answer").empty();
-		  clearInterval(countdown_interval);
+          
+		  display_question();
 		  
-		  $("#question").ready(function(){
-		   $("#tryagain").text("click to try again");
-		   display_question();
-		   display_countdown();
-		   countdown --;
-		   
-		  });
+		  $("#answer").fadeOut(10);
+		  $("#try").text("try again").fadeIn(1000).fadeOut(2000);
+		  $("#answer").fadeIn(8000);
+		 
+		  countdown --;
+		  
 	});
 	
 	

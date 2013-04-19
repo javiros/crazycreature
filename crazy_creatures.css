@@ -275,6 +275,23 @@ font-family: 'Happy Monkey', cursive;
   padding-left: 30px;
 }
 
+#try {
+ position:absolute;
+  width: 290px;
+  height: 100px;
+  float: left;
+  margin-top:150px;
+  padding-left: 30px;
+  padding-left: 30px;
+}
+
+.try  {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 35px;
+	text-align: left;
+	color: green;
+
+}
 
 #answer {
   width: 270px;
