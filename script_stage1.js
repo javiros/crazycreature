@@ -39,12 +39,8 @@ $(document).on("ready", function(){
 				display_question();
 				countdown = max_countdown;
 			} else {
-<<<<<<< HEAD
-				$("#question").text("Brilliant! Now onto the Next Stage!");
-				$("#next_button").fadeIn(1000);
-=======
 				$("#question").text("Brilliant! On to Stage 2");
->>>>>>> c613239953e957e35c5f32c9eb776f995ea2db9e
+				$('#next_button').fadeIn(500);
 				$("#answer").empty();
 				clearInterval(countdown_interval);
 			}	
@@ -56,19 +52,27 @@ $(document).on("ready", function(){
 	});
 	
 	var display_error = (function() {
-		  $("#question").text("you suck");
+
+		  $("#question").text("click to try again");
+		   display_question();
 		  $("#answer").empty();
 		  clearInterval(countdown_interval);
+		  
+		  $("#question").ready(function(){
+		   $("#tryagain").text("click to try again");
+		   display_question();
+		   display_countdown();
+		   countdown --;
+		   
+		  });
 	});
+	
 	
 	var display_score = (function (){ 
 			$(".text_blk_25").text(score * 100);
-<<<<<<< HEAD
 			//if (display_score == 300) {
   		//$("#next_button").show();
 		//}
-=======
->>>>>>> c613239953e957e35c5f32c9eb776f995ea2db9e
 			
 	});
 	
@@ -92,17 +96,11 @@ $(document).on("ready", function(){
 	$('#slides_1').slideDown(3000);
             $('#ticks').fadeIn(4000);
 			}
-<<<<<<< HEAD
 
 	});
 
 	
 
-=======
-	
-	
-	});
->>>>>>> c613239953e957e35c5f32c9eb776f995ea2db9e
 	
 	display_question();
 	display_score();

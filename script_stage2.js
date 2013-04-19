@@ -1,22 +1,15 @@
 
 $(document).on("ready", function(){
   var questions = [
-<<<<<<< HEAD
   {},
   {},
   {},
-=======
->>>>>>> c613239953e957e35c5f32c9eb776f995ea2db9e
 	{"text": "What is the Sun?", "answers": ["A Star", "A Planet", "A Food", "A Big Bulb"], "correct": "A Star", "picture": "images/monkey_1.png" },
 	{"text": "Where is Paris?", "answers": ["In Antartica", "In Your Fridge", "On the Moon", "In France"], "correct": "In France" },
 	{"text": "What is a Flamingo?", "answers": ["A Fairy", "A Plant", "A Bird", "A Fluffy Toy?"], "correct": "A Bird" },
   ];
   
-<<<<<<< HEAD
 	var score = 3
-=======
-	var score = 0
->>>>>>> c613239953e957e35c5f32c9eb776f995ea2db9e
 	var slide = ["images/octopus_1.png", "images/octopus_2.png", "images/octopus_3.png"]
 	var sound = ["bubbles.wav"]
 	
