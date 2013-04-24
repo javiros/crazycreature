@@ -2,7 +2,7 @@
 $(document).on("ready", function(){
   var questions = [
 	{"text": "What is the Sun?", "answers": ["A Star", "A Planet", "A Food", "A Big Bulb"], "correct": "A Star", "picture": "images/monkey_1.png" },
-	{"text": "Where is Paris?", "answers": ["In Antartica", "In Your Fridge", "On the Moon", "In France"], "correct": "In France" },
+	{"text": "Where is Paris?", "answers": ["In Antartica", "In the Fridge", "On the Moon", "In France"], "correct": "In France" },
 	{"text": "What is a Flamingo?", "answers": ["A Fairy", "A Plant", "A Bird", "A Fluffy Toy?"], "correct": "A Bird" },
   ];
   
@@ -53,9 +53,13 @@ $(document).on("ready", function(){
 	});
 	
 	var display_error = (function() {
-		  $("#question").text("Try Again!");
-		  $("#answer").empty();
-		  clearInterval(countdown_interval);
+	
+		display_question();
+		$("#answer").fadeOut(500);
+		$("#try").text("Try Again!").fadeIn(100).fadeOut(2000);
+
+		  $("#answer").fadeIn(200);
+		  countdown --;
 	});
 	
 	var display_score = (function (){ 
@@ -63,17 +67,26 @@ $(document).on("ready", function(){
 			
 	});
 	
-	var max_countdown = 100;
+	var max_countdown = 60;
 	var countdown = max_countdown;
 	var display_countdown = (function() {
 		$("#countdown").text(countdown);
+	});
+	
+	var game_end = (function()  {
+		$("#try").text("Try Again!").effect("shake",{  times: 4}, 3000);
+
+		  countdown --;
 	});
 	
 	var countdown_interval = setInterval(function() {
 			display_countdown();
 			countdown--;
 			if(countdown < 0){
-				display_error();
+			$("#answer").empty();
+			$("#question").text("out of time");
+			clearInterval(countdown_interval);
+			game_end();
 			}
 			}, 1000);
 			

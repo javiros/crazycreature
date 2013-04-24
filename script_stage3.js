@@ -1,6 +1,6 @@
 
 $(document).on("ready", function(){
-	$('#slides3').slideUp(10000);
+	$('#slides3').slideUp(15000);
   var questions = [
 	{"text": "Who am I?", "answers": ["A Dog", "A Cat", "A Bear", "A Panda"], "correct": "A Panda"},
 	
@@ -49,9 +49,13 @@ $(document).on("ready", function(){
 	});
 	
 	var display_error = (function() {
-		  $("#question").text("Try Again!");
-		  $("#answer").empty();
-		  clearInterval(countdown_interval);
+	
+		display_question();
+		$("#answer").fadeOut(500);
+		$("#try").text("Try Again!").fadeIn(100).fadeOut(2000);
+
+		  $("#answer").fadeIn(200);
+		  countdown --;
 	});
 	
 	var display_score = (function (){ 
@@ -60,17 +64,26 @@ $(document).on("ready", function(){
 			
 	});
 	
-	var max_countdown = 10;
+	var max_countdown = 15;
 	var countdown = max_countdown;
 	var display_countdown = (function() {
 		$("#countdown").text(countdown);
+	});
+	
+	var game_end = (function()  {
+		$("#try").text("Try Again!");
+
+		  countdown --;
 	});
 	
 	var countdown_interval = setInterval(function() {
 			display_countdown();
 			countdown--;
 			if(countdown < 0){
-				display_error();
+			$("#answer").empty();
+			$("#question").text("out of time");
+			clearInterval(countdown_interval);
+			game_end();
 			}
 			}, 1000);
 		

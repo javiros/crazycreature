@@ -56,9 +56,13 @@ $(document).on("ready", function(){
 	});
 	
 	var display_error = (function() {
-		  $("#question").text("Try Again!");
-		  $("#answer").empty();
-		  clearInterval(countdown_interval);
+	
+		display_question();
+		$("#answer").fadeOut(500);
+		$("#try").text("Try Again!").fadeIn(100).fadeOut(2000);
+
+		  $("#answer").fadeIn(200);
+		  countdown --;
 	});
 	
 	var display_score = (function (){ 
@@ -73,11 +77,20 @@ $(document).on("ready", function(){
 		$("#countdown").text(countdown);
 	});
 	
+	var game_end = (function()  {
+		$("#try").text("Try Again!").effect("shake",{  times: 4}, 3000);
+
+		  countdown --;
+	});
+	
 	var countdown_interval = setInterval(function() {
 			display_countdown();
 			countdown--;
 			if(countdown < 0){
-				display_error();
+			$("#answer").empty();
+			$("#question").text("out of time");
+			clearInterval(countdown_interval);
+			game_end();
 			}
 			}, 1000);
 		

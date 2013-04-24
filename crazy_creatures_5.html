@@ -15,9 +15,12 @@
    <script src="script_stage5.js"></script>
     <script src="jquerySides5.js"></script>
     <script src="jqueryTrees4.js"></script>
-
+	<!--<script src="jqueryDrag.js"></script>-->
+	 <script src="jqueryDrop.js"></script>
     <script src="jqueryBadges.js"></script>
-   
+   <!-- below is from http://www.netzgesta.de/snapfit/ -->
+   <!--<script type="text/javascript" src="snapfit.js"></script> -->
+  
    </head>
 <body>
 	<div id="mainContainer">
@@ -59,95 +62,89 @@
 			<span class="text_pink_24">CRAZY</span> <span class="text_blue_24">CREATURES </span><br />
 			with the right Answers!<br /><br />
 			<span class="text_red_24"> HEY HEY Let's Go!!</span><br />
-			<span class="text_red_24">Move them around!</span><br />
+			<span class="text_red_24">Make 3 Creatures!</span><br />
 			
 		</div>
 		
-		<div id="quiz_container">
-
 			<div id="quiz5">
-
-				<div id="stageTop">
-					<div id="stage">			
-					<span class="stage5">Stage 5</span>
+			
+				<div id="slides5">
+					<div id="left1" class="jigsaw_no_border">
+						<div id="drag_bluebird3"></div>	
+						 <p></p>
 					</div>
+					<div id="left2" class="jigsaw_no_border">
+						<div id="drag_elephant2"></div>
+						<p></p>						
+					</div>
+					<div id="left3" class="jigsaw_no_border">											
 						
+							<div id="drag_bluebird1"></div>	
+						<p></p>	
+					</div>					
 				</div>
-
-			
-			
-			<div id="slides5">
 				
 				
-							
-			</div>
-
-			<div id="ticks1">
-				<div id="tick_1">
+				
+				<div id="slides5">
+					<div id="middle1" class="jigsaw_no_border">
+						
+						<div id="drag_bluebird2"></div>	
+						<p></p>
+					</div>
+					<div id="middle2" class="jigsaw_no_border">
+						<div id="drag_elephant1"></div>
+						<p></p>
+					</div>
+					<div id="middle3" class="jigsaw_no_border">					
+						<div id="drag_dog3"></div>
+						<p></p>
+					</div>					
 				</div>
-				<div id="tick_2">
-				</div>
-				<div id="tick_3">
-				</div>			
-			</div>
 
-		</div>
+
+				<div id="slides5">
+					<div id="right1" class="jigsaw_no_border">	
+						
+						<div id="drag_elephant3"></div>			
+						<p></p>
+					</div>
+					<div id="right2" class="jigsaw_no_border">
+						<div id="drag_dog2"></div>
+						<p></p>
+					</div>
+					<div id="right3" class="jigsaw_no_border">
+						<div id="drag_dog1"></div>	
+						<p></p>
+					</div>		
+
+			</div>
+				
+		</div>		
 		
-		<div id="stages_container">
-					<div id="stages">
-						<p class="stage1">Stage 1</p>
-						<p class="stage2">Stage 2</p>
-						<p class="stage3">Stage 3</p>
-						<p class="stage4">Stage 4</p>
-						<p class="stage5">Stage 5</p>
-					</div>
-
-					<div id="stage1_tick" class="stage_tick">
-					</div>
-					<div id="stage2_tick" class="stage_tick">
-					</div>
-					<div id="stage3_tick" class="stage_tick">
-					</div>
-					<div id="stage4_tick" class="stage_tick">
-					</div>
-					<div id="stage5_tick" class="stage_tick">
-					</div>
-
-					<div id="score_text">
-					<span class="text_blk_30">SCORE</span>
-					</div>
-
-					<div id="score">
-						<span class="text_blk_25"></span>
-					</div>
-		</div>
 
 	<div id="bottom">
-		<div id="badges">
-			<div id="badges_text">
+		<div id="badges5">
+			<div id="badges_text5">
 				<span class="text_blk_22">Add your <span class="text_pink_24">CRAZY</span> 
 				<span class="text_blue_24">CREATURES</span> Here!</span>
 			</div>
 
-			<div id="five_badges">
+			<div id="eight_badges">
 				<div id="badge_1" class="badge"><img src="images/monkey_badge.png"></div>
 					<div id="badge_2" class="badge"><img src="images/octopus_badge.png"></div>
 						<div id="badge_3" class="badge"><img src="images/panda_badge.png"></div>
 							<div id="badge_4" class="badge"><img src="images/penguin_badge.png"></div>
 								<div id="badge_5" class="badge"><img src="images/question_mark.png"></div>
+									<div id="badge_6" class="badge"><img src="images/question_mark.png"></div>
+										<div id="badge_7" class="badge"><img src="images/question_mark.png"></div>
+								
 				
 			</div>
 
 		</div>
 			
-				<div id="big_buttons">
-					<div id="again_button">
-					<span class="text_blk_18">Make More <br />
-						<span class="text_pink_18">CRAZY</span> CREATURES!</span>
-					</div>
-
 				
-				</div>
 	</div>
 </div>
 

@@ -57,7 +57,7 @@ $(document).on("ready", function(){
 	
 		display_question();
 		$("#answer").fadeOut(500);
-		$("#try").text("try again").fadeIn(100).fadeOut(2000);
+		$("#try").text("Try Again!").fadeIn(100).fadeOut(2000);
 
 		  $("#answer").fadeIn(200);
 		  countdown --;
@@ -75,6 +75,12 @@ $(document).on("ready", function(){
 		$("#countdown").text(countdown);
 	});
 	
+	var game_end = (function()  {
+		$("#try").text("Try Again!").effect("shake",{  times: 4}, 3000);
+
+		  countdown --;
+	});
+	
 	var countdown_interval = setInterval(function() {
 			display_countdown();
 			countdown--;
@@ -82,7 +88,7 @@ $(document).on("ready", function(){
 			$("#answer").empty();
 			$("#question").text("out of time");
 			clearInterval(countdown_interval);
-			
+			game_end();
 			}
 			}, 1000);
 			
