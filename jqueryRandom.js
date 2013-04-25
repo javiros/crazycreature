@@ -1,6 +1,7 @@
 $(document).ready(function() {
-
+	$('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 	$('#red_button1').click(function(){
+		$('body').append('<embed src="sounds/button-14.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 // this code from http://www.markinns.com/articles/full/simple_two_line_image_randomiser_script_with_jquery
 var images = ['images/flamingo_1.png', 'images/cat_1.png', 'images/monkey_1.png', 'images/octopus_1.png', 'images/bear_white1.png',
  'images/panda_1.png', 'images/penguin_1.png', 'images/bluebird_1.png', 'images/giraffe_1.png', 'images/rooster_1.png', 'images/elephant_1.png',
@@ -12,6 +13,7 @@ var images = ['images/flamingo_1.png', 'images/cat_1.png', 'images/monkey_1.png'
 });
 
 	$('#red_button2').click(function(){
+		$('body').append('<embed src="sounds/button-9.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 // this code from http://www.markinns.com/articles/full/simple_two_line_image_randomiser_script_with_jquery
 var images = ['images/flamingo_2.png', 'images/cat_2.png', 'images/monkey_2.png', 'images/octopus_2.png', 'images/bear_white2.png',
 'images/panda_2.png', 'images/penguin_2.png', 'images/bluebird_2.png', 'images/giraffe_2.png', 'images/rooster_2.png', 'images/elephant_2.png',
@@ -23,6 +25,7 @@ var images = ['images/flamingo_2.png', 'images/cat_2.png', 'images/monkey_2.png'
 });
 
 	$('#red_button3').click(function(){
+		$('body').append('<embed src="sounds/button-1.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 // this code from http://www.markinns.com/articles/full/simple_two_line_image_randomiser_script_with_jquery
 var images = ['images/flamingo_3.png', 'images/cat_3.png', 'images/monkey_3.png', 'images/octopus_3.png', 'images/bear_white3.png',
 'images/panda_3.png', 'images/penguin_3.png', 'images/bluebird_3.png', 'images/giraffe_3.png', 'images/rooster_3.png', 'images/elephant_3.png',

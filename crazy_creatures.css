@@ -351,17 +351,28 @@ A{
   background-image: url(images/monkey_bounce.png);
 }
 
-#rooster_bounce {
-  width: 1330px;
+#rooster_bounce_left {
+  width: 665px;
   height: 300px;
   margin-top: 600px;
   position: absolute;
   z-index: 2;
     margin-right: auto;
   margin-left: auto;
-  background-image: url(images/rooster_bounce.png);
+  float:left;
+  background-image: url(images/rooster_bounce_left.png);
 }
 
+#rooster_bounce_right{
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 665px;
+  position: absolute;
+  z-index: 2;
+    float:right;
+  background-image: url(images/bird_bounce_right.png);
+}
 
 #bird_bounce {
   width: 1330px;
@@ -564,7 +575,7 @@ color: red;
   border-left: 10px solid #CDB38B;
   border-right: 10px solid #CDB38B;
     margin-bottom: 50px;
-	margin-left: 40px;
+  margin-left: 40px;
 }
 #slides5cat{
   width: 260px;
@@ -576,10 +587,10 @@ color: red;
   border-left: 10px solid #CDB38B;
   border-right: 10px solid #CDB38B;
     margin-bottom: 50px;
-	margin-left: 40px;
-	
-	  /*background-image: url(images/cat.png);*/
-	
+  margin-left: 40px;
+  
+    /*background-image: url(images/cat.png);*/
+  
 }
 #slides_cat  {
   width: 260px;
@@ -772,26 +783,26 @@ color: red;
 }
 
 .question  {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 35px;
-	text-align: left;
-	color: #0972f4;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 35px;
+  text-align: left;
+  color: #0972f4;
 
 }
 
 .answer {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 36px;
-	text-align: left;
-	color: #0972f4;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 36px;
+  text-align: left;
+  color: #0972f4;
 }
 li {
-	font-family: "Comic Sans MS", cursive, sans-serif;
-	font-size: 40px;
-	text-align: left;
-	color: #b416ef;
-	list-style-type:none;
-	cursor:pointer;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 40px;
+  text-align: left;
+  color: #b416ef;
+  list-style-type:none;
+  cursor:pointer;
 }
 
 #stages_container {
@@ -817,38 +828,38 @@ li {
 }
 
 .stage1 {
-  	font-family: 'Autour One', cursive;
-	font-size: 34px;
-	text-align: left;
-	color: #00ff00;
+    font-family: 'Autour One', cursive;
+  font-size: 34px;
+  text-align: left;
+  color: #00ff00;
 }
 
 .stage2 {
-  	font-family: 'Autour One', cursive;
-	font-size: 34px;
-	text-align: left;
-	color: #ff9900;
+    font-family: 'Autour One', cursive;
+  font-size: 34px;
+  text-align: left;
+  color: #ff9900;
 }
 
 .stage3 {
-  	font-family: 'Autour One', cursive;
-	font-size: 34px;
-	text-align: left;
-	color: #0000ff;
+    font-family: 'Autour One', cursive;
+  font-size: 34px;
+  text-align: left;
+  color: #0000ff;
 }
 
 .stage4 {
-  	font-family: 'Autour One', cursive;
-	font-size: 34px;
-	text-align: left;
-	color: #ff00cc;
+    font-family: 'Autour One', cursive;
+  font-size: 34px;
+  text-align: left;
+  color: #ff00cc;
 }
 
 .stage5 {
-  	font-family: 'Autour One', cursive;
-	font-size: 34px;
-	text-align: left;
-	color: #ff0000;
+    font-family: 'Autour One', cursive;
+  font-size: 34px;
+  text-align: left;
+  color: #ff0000;
 }
 
 .text_black {
@@ -866,10 +877,10 @@ li {
 }
 
 .stage_tick {
-	width: 100px;
- 	height: 80px;
- 	background-image: url(images/stage_tick.png);
- 	float: left;
+  width: 100px;
+  height: 80px;
+  background-image: url(images/stage_tick.png);
+  float: left;
 }
 
 
@@ -904,9 +915,9 @@ li {
   height: 40px;
   float: left;
   font-family: tahoma;
-	font-size: 1.8em;
-	font-weight:bold;
-	color: red;
+  font-size: 1.8em;
+  font-weight:bold;
+  color: red;
   border-top: 10px solid #00ff00;
   border-bottom: 10px solid #00ff00;
   border-left: 10px solid #00cc00;
@@ -1143,16 +1154,16 @@ li {
   background-image: url(images/dogbrown_3.png);
 }
 .jigsaw{
-	width: 260px;
-	height: 140px; 
-	border-bottom: 5px solid #EED5B7;
-	/*background-color: red;*/
+  width: 260px;
+  height: 140px; 
+  border-bottom: 5px solid #EED5B7;
+  /*background-color: red;*/
 }
 
 .jigsaw_no_border{
-	width: 260px;
-	height: 140px; 
-	/*background-color: red;*/
+  width: 260px;
+  height: 140px; 
+  /*background-color: red;*/
 }
 
 
