@@ -7,7 +7,7 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 	{"text": "What is a Flamingo?", "answers": ["A Fairy", "A Plant", "A Bird", "A Fluffy Toy?"], "correct": "A Bird" },
   ];
   
-	var score = 0
+	var score = 0 
   var slide = ["images/octopus_1.png", "images/octopus_2.png", "images/octopus_3.png"]
 	var sound = ["monkeysound.wav"]
 	
@@ -64,7 +64,7 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 	});
 	
 	var display_score = (function (){ 
-			$(".text_blk_25").text(score * 100);
+			$(".text_blk_25").text( 300 + score * 100);
 			
 	});
 	

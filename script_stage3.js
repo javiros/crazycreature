@@ -60,7 +60,7 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 	});
 	
 	var display_score = (function (){ 
-			$(".text_blk_25").text(score * 100);
+			$(".text_blk_25").text(600 + score * 100);
 		
 			
 	});
