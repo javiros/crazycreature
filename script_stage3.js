@@ -1,5 +1,6 @@
 
 $(document).on("ready", function(){
+$('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 	$('#slides3').slideUp(15000);
   var questions = [
 	{"text": "Who am I?", "answers": ["A Dog", "A Cat", "A Bear", "A Panda"], "correct": "A Panda"},

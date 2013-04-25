@@ -1,5 +1,6 @@
 
 $(document).on("ready", function(){
+$('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
   var questions = [
 	{"text": "What is the Sun?", "answers": ["A Star", "A Planet", "A Food", "A Big Bulb"], "correct": "A Star", "picture": "images/monkey_1.png" },
 	{"text": "Where is Paris?", "answers": ["In Antartica", "In the Fridge", "On the Moon", "In France"], "correct": "In France" },

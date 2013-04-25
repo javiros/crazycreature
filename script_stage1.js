@@ -1,5 +1,6 @@
 
 $(document).on("ready", function(){
+ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
   var questions = [
 	{"text": "What is a Tiger?", "answers": ["A Car", "A Sandwich", "An Animal", "A Food"], "correct": "An Animal", "picture": "images/monkey_1.png" },
 	{"text": "Where do Octopus live?", "answers": ["The Moon", "Germany", "Your Fridge", "The Ocean"], "correct": "The Ocean" },

@@ -1,5 +1,6 @@
 
 $(document).on("ready", function(){
+$('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 	//$('#slides4_puzzle2').toggle(500);
 	//$('#slides4_puzzle2').hide(1000);
 

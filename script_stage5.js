@@ -1,4 +1,5 @@
 $(document).on("ready", function(){
+$('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 
 // moveable divs have id
 // when moved over correct matching id div to 'click in' 
