@@ -1,5 +1,6 @@
- $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+
  $(function() {
+  $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 	$( "#drag_bluebird1" ).draggable({revert: 'invalid'});
 	
 	$("#left1").droppable({
