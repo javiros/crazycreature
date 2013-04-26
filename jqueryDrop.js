@@ -1,4 +1,6 @@
-
+$(document).on("ready", function(){
+ var score = 0
+ 
  $(function() {
   $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 	$( "#drag_bluebird1" ).draggable({revert: 'invalid'});
@@ -10,8 +12,12 @@
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_bluebird1").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
-    }
-});
+	score++;
+	display_score();
+	}
+	
+	});
+	
 
 	$( "#drag_bluebird2" ).draggable({revert: 'invalid'});
 	
@@ -22,6 +28,8 @@
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_bluebird2").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 			
 	});
@@ -35,6 +43,8 @@
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_bluebird3").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 	});
 
@@ -47,6 +57,8 @@ $( "#drag_elephant1" ).draggable({revert: 'invalid'});
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_elephant1").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 	});
 
@@ -59,6 +71,8 @@ $( "#drag_elephant1" ).draggable({revert: 'invalid'});
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_elephant2").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 			
 	});
@@ -72,6 +86,8 @@ $( "#drag_elephant1" ).draggable({revert: 'invalid'});
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_elephant3").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 			
 	});
@@ -85,6 +101,8 @@ $( "#drag_dog1" ).draggable({revert: 'invalid'});
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_dog1").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 	});
 
@@ -97,6 +115,8 @@ $( "#drag_dog1" ).draggable({revert: 'invalid'});
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_dog2").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		display_score();
     }
 			
 	});
@@ -110,9 +130,20 @@ $( "#drag_dog1" ).draggable({revert: 'invalid'});
     drop: function(event, ui) {
         $(this).addClass('ui-state-highlight').find('p');
 		$("#drag_dog3").append('<embed src="sounds/shinyding.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		score++;
+		
+		display_score();
     }
 			
 	});
-
+	
+		
+	var display_score = (function (){ 
+			$(".text_blk_22a").text(800 + score * 100);
+		
+	});
+		
+		display_score();
+		
 });
-
+});
