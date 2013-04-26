@@ -335,9 +335,6 @@ A{
   position: absolute;
   z-index: 3;
   background-image: url(images/parrot_flight.png);
-
-
-
 }
 
 #monkey_bounce {
@@ -372,6 +369,121 @@ A{
   z-index: 2;
     float:right;
   background-image: url(images/bird_bounce_right.png);
+}
+
+#penguin_bounce_left {
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  position: absolute;
+  z-index: 2;
+    margin-right: auto;
+  margin-left: auto;
+  float:left;
+  background-image: url(images/penguin_bounce_left.png);
+}
+
+#penguin_bounce_right{
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 665px;
+  position: absolute;
+  z-index: 2;
+    float:right;
+  background-image: url(images/penguin_bounce_right.png);
+}
+
+#flamingo_bounce_left {
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  position: absolute;
+  z-index: 2;
+    margin-right: auto;
+  margin-left: auto;
+  float:left;
+  background-image: url(images/flamingo_bounce_left.png);
+}
+
+#flamingo_bounce_right{
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 665px;
+  position: absolute;
+  z-index: 2;
+    float:right;
+  background-image: url(images/flamingo_bounce_right.png);
+}
+
+#panda_bounce_left {
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  position: absolute;
+  z-index: 2;
+    margin-right: auto;
+  margin-left: auto;
+  float:left;
+  background-image: url(images/panda_bounce_left.png);
+}
+
+#panda_bounce_right{
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 665px;
+  position: absolute;
+  z-index: 2;
+    float:right;
+  background-image: url(images/panda_bounce_right.png);
+}
+
+#meercat_bounce_left {
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  position: absolute;
+  z-index: 2;
+    margin-right: auto;
+  margin-left: auto;
+  float:left;
+  background-image: url(images/meercat_bounce_left.png);
+}
+
+#meercat_bounce_right{
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 665px;
+  position: absolute;
+  z-index: 2;
+    float:right;
+  background-image: url(images/meercat_bounce_right.png);
+}
+
+#monkey_bounce_left {
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  position: absolute;
+  z-index: 2;
+    margin-right: auto;
+  margin-left: auto;
+  float:left;
+  background-image: url(images/monkey_bounce_left.png);
+}
+
+#monkey_bounce_right{
+  width: 665px;
+  height: 300px;
+  margin-top: 600px;
+  margin-left: 665px;
+  position: absolute;
+  z-index: 2;
+    float:right;
+  background-image: url(images/monkey_bounce_right.png);
 }
 
 #bird_bounce {
@@ -444,6 +556,23 @@ font-family: 'Happy Monkey', cursive;
   text-decoration: none;
 }
 
+
+.text_white_60_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text_yellow_60_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 60px;
+  color: #ffff00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
 .text_red_18 {
   font-family: 'Happy Monkey', cursive;
   font-size: 18px;
@@ -461,9 +590,9 @@ font-family: 'Happy Monkey', cursive;
   color: #0000ff;
 }
 
-.text_blue_18 {
+.text_blue_20 {
  font-family: 'Nunito', sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #0000ff;
 }
 
@@ -472,7 +601,17 @@ font-family: 'Happy Monkey', cursive;
   font-size: 24px;
   color: #ff0000;
 }
+.text_red_28 {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 28px;
+  color: #ff0000;
+}
 
+.text_black_28 {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 28px;
+  color: #000000;
+}
 #quiz_container  {
   width: 700px;
   height: 500px;
@@ -495,15 +634,12 @@ font-family: 'Happy Monkey', cursive;
   z-index: 4;
 }
 
-
 #stage {
   width: 170px;
   height: 60px;
   float: left;
   padding-left: 30px;
 }
-
-
 
 #question {
   width: 290px;
@@ -512,7 +648,6 @@ font-family: 'Happy Monkey', cursive;
   padding-left: 30px;
   padding-left: 30px;
 }
-
 
 #try {
 position:relative;
@@ -538,8 +673,6 @@ color: red;
   float: left;
 }
 
-
-
 #ticks1{
   display:none;
   }
@@ -562,7 +695,10 @@ color: red;
   border-left: 10px solid #00cc00;
   border-right: 10px solid #00cc00;
     margin-bottom: 50px;
+        background-image: url(images/slides7.png);
+
 }
+
 
 
 #slides5  {
@@ -574,8 +710,8 @@ color: red;
   border-bottom: 10px solid #8B8878;
   border-left: 10px solid #CDB38B;
   border-right: 10px solid #CDB38B;
-    margin-bottom: 50px;
-  margin-left: 40px;
+   
+  
 }
 #slides5cat{
   width: 260px;
@@ -759,28 +895,6 @@ color: red;
   float: left;
 }
 
-#cross_1 {
-  width: 70px;
-  height: 150px;
-  float: left;
-  background-image: url(images/red_x.png);
-}
-
-
-#cross_2 {
-  width: 70px;
-  height: 150px;
-  float: left;
-  background-image: url(images/red_x.png);
-}
-
-#cross_3 {
-  width: 70px;
-  height: 150px;
-  float: left;
-  background-image: url(images/red_x.png);
-  margin-bottom: 50px;
-}
 
 .question  {
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -831,7 +945,7 @@ li {
     font-family: 'Autour One', cursive;
   font-size: 34px;
   text-align: left;
-  color: #00ff00;
+  color: #66CD00;
 }
 
 .stage2 {
@@ -893,22 +1007,38 @@ li {
   font-weight: bold;
   float: left;
   font-size: 36px;
+
 }
 
 #score {
-  width: 55px;
+  width: 65px;
   height: 30px;
   margin:15px;
   padding-top: 10px;
   padding-left: 10px;
   float: left;
-    
+    text-align: center;
   border-top: 10px solid #00ff00;
   border-bottom: 10px solid #00ff00;
   border-left: 10px solid #00cc00;
   border-right: 10px solid #00cc00;
    background-color: #66ff66;
 }
+
+
+#score_5 {
+  width: 45px;
+  height: 25px;
+  padding-left: 30px;
+  float: left;
+    text-align: center;
+  border-top: 5px solid #00ff00;
+  border-bottom: 5px solid #00ff00;
+  border-left: 5px solid #00cc00;
+  border-right: 5px solid #00cc00;
+   background-color: #66ff66;
+}
+
 
 #countdown {
   width: 55px;
@@ -923,6 +1053,7 @@ li {
   border-left: 10px solid #00cc00;
   border-right: 10px solid #00cc00;
    background-color: #66ff66;
+   text-align: center;
 }
 
 #bottom {
@@ -943,17 +1074,17 @@ li {
   float: left;
 }
 #badges_text {
-  width: 670px;
+  width: 650px;
   height: 30px;
   float: left;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 #badges_text5 {
-  width: 970px;
+  width: 610px;
   height: 30px;
   float: left;
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 #right_side {
@@ -971,11 +1102,11 @@ li {
 }
 
 #eight_badges {
-  width: 950px;
+  width: 930px;
   height: 170px;
   float: left;
   padding-right: 25px;
-  padding-left: 25px;
+  padding-left: 45px;
 }
 
 .badge {
@@ -1202,23 +1333,70 @@ width:100px;
 #slides6_1 {
   width: 260px;
   height: 140px;
-
   float: left;
-
 }
 
 #slides6_2 {
   width: 260px;
   height: 140px;
-
   float: left;
-
 }
 
 #slides6_3 {
   width: 260px;
   height: 140px;
-
   float: left;
+}
+
+#stage5_name {
+  width: 280px;
+  height: 50px;
+  float: left;
+  text-align: center;
+}
+
+#stage5_name_dog {
+  width: 280px;
+  height: 35px;
+  float: left;
+  text-align: center;
+}
+
+#stage5_score_dog {
+  width: 170px;
+  height: 45px;
+  float: left;
+  text-align: center;
+}
+#slides5_container {
+  width: 280px;
+  height: 500px;
+    margin-left: 40px;
+  float: left;
+}
+#slides5_container_dog {
+  width: 280px;
+  height: 530px;
+    margin-left: 40px;
+  float: left;
+}
+
+#bonus {
+  width: 580px;
+  height: 260px;
+    margin-left: 180px;
+      border-top: 20px solid #ff9999;
+  border-bottom: 20px solid #990033;
+  border-left: 20px solid #cc0033;
+  border-right: 20px solid #cc0033;
+  background-color: #BF3EFF;
+  margin-top: 50px;
+  text-align: center;
+  padding-top: 20px;
+  float: left;
+   z-index: 7;
+  position: absolute;
+  display: none;
 
 }
+

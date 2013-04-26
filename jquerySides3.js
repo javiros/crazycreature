@@ -1,10 +1,4 @@
    $(document).ready(function(){   
-        
-
-        $('#leftSide5').delay(3500).show("slide", { direction: "right" }, 500);
-        $('#leftSide5').on ('mouseover',function(){  
-  		$('#leftSide5').hide("slide", { direction: "right" }, 200); 
-  	});
 
 $('#leftSide2').delay(4300).show("slide", { direction: "right" }, 500);
         $('#leftSide2').on ('mouseover',function(){  
@@ -16,9 +10,9 @@ $('#leftSide2').delay(4300).show("slide", { direction: "right" }, 500);
   		$('#rightSide2').hide("slide", { direction: "left" }, 100); 
   	});
 
-        $('#rightSide4').delay(8000).show("slide", { direction: "left" }, 300);
-        $('#rightSide4').on ('mouseover',function(){  
-  		$('#rightSide4').hide("slide", { direction: "left" }, 100); 
+        $('#rightSide1').delay(8000).show("slide", { direction: "left" }, 300);
+        $('#rightSide1').on ('mouseover',function(){  
+  		$('#rightSide1').hide("slide", { direction: "left" }, 100); 
   	});
 
 
