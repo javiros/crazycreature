@@ -24,6 +24,11 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 		}
 		
 		$("#answer li").on("click", validate_answer);
+		//code below: source= http://codereview.stackexchange.com/questions/11948/randomize-a-jquery-object-list	
+		for (var $x=$("#answer li"), i=$x.length-1, j, temp; i>=0; i--) { j=Math.floor(Math.random()*(i+1)), temp=$x[i], $x[i]=$x[j], $x[j]=temp; }
+		$x.each(function(i, li) { $("#answer").append(li);
+		});
+
 	});
 	
 
