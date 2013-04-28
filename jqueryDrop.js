@@ -40,7 +40,9 @@ $(document).on("ready", function(){
 		
 		if (score >= 9){
 			$("#bonus").effect("shake",{  times: 6}, 5000);
+			$(".text_blk_22a").text(2000);
 		}
+		
 	});
 		
 	display_score();		
