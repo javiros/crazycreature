@@ -9,6 +9,160 @@ body {
   margin-left: auto;
 }
 
+#dragContainer {
+  width: 1330px;
+  height: 930px;
+  z-index: 10;
+  position: absolute;
+  float:left;
+}
+
+#drag1 {
+  width: 535px;
+  height: 930px;
+    float:left;
+}
+
+#drag_empty1a {
+  width: 535px;
+  height: 200px;
+  float: left;
+}
+
+#drag_empty1b {
+  width: 225px;
+  height: 140px;
+    float: left;
+}
+
+#drag_empty1c {
+  width: 50px;
+  height: 140px;
+    float: left;
+}
+
+#drag_empty1d {
+  width: 100px;
+  height: 140px;
+    float: left;
+}
+
+#drag_empty1e {
+  width: 175px;
+  height: 140px;
+    float: left;
+}
+
+#drag_empty1f {
+  width: 125px;
+  height: 140px;
+    float: left;
+}
+
+#drag_empty1g {
+  width: 150px;
+  height: 140px;
+    float: left;
+}
+#drag_empty1h {
+  width: 535px;
+  height: 310px;
+    float: left;
+}
+
+#drag2 {
+  width: 260px;
+  height: 930px;
+    float:left;
+
+}
+
+#drag_empty2a {
+  width: 260px;
+  height: 100px;
+  float: left;
+}
+
+#drag_empty2b {
+  width: 260px;
+  height: 220px;
+  float: left;
+}
+
+#drag_empty2c {
+  width: 260px;
+  height: 330px;
+  float: left;
+}
+
+
+#drag3 {
+  width: 535px;
+  height: 930px;
+    float:left;
+
+}
+
+#drag_empty3a {
+  width: 535px;
+  height: 200px;
+  float: left;
+}
+
+#drag_empty3b {
+  width: 20px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3c {
+  width: 255px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3d {
+  width: 125px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3e {
+  width: 150px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3f {
+  width: 150px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3g {
+  width: 125px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3h {
+  width: 225px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3i {
+  width: 50px;
+  height: 140px;
+  float: left;
+}
+
+#drag_empty3j {
+  width: 535px;
+  height: 170px;
+  float: left;
+}
+
 A{
   text-decoration: none;
 }
@@ -78,6 +232,15 @@ A{
     float: left;
       background-image: url(images/tree_leaves4a.png);
       z-index:1;
+      position:absolute;
+}
+
+#left_over5{
+  width: 260px;
+  height: 900px;
+    float: left;
+      background-image: url(images/tree_leaves4a.png);
+      z-index:6;
       position:absolute;
 }
 
@@ -153,6 +316,15 @@ A{
     float: left;
       background-image: url(images/tree_leaves4b.png);
       z-index:2;
+      position:absolute;
+}
+
+#right_over5{
+  width: 260px;
+  height: 900px;
+    float: left;
+      background-image: url(images/tree_leaves4b.png);
+      z-index:6;
       position:absolute;
 }
 
@@ -373,10 +545,10 @@ A{
 
 #penguin_bounce_left {
   width: 665px;
-  height: 300px;
-  margin-top: 600px;
+  height: 160px;
+  margin-top: 740px;
   position: absolute;
-  z-index: 2;
+  z-index: 13;
     margin-right: auto;
   margin-left: auto;
   float:left;
@@ -513,6 +685,7 @@ A{
   padding-top: 20px;
 }
 
+
 .text_blk_18 {
  font-family: 'Nunito', sans-serif;
   font-size: 18px;
@@ -526,6 +699,12 @@ A{
 }
 
 .text_blk_22 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  color: #000;
+}
+
+.text_blk_22a {
   font-family: 'Nunito', sans-serif;
   font-size: 22px;
   color: #000;
@@ -556,10 +735,43 @@ font-family: 'Happy Monkey', cursive;
   text-decoration: none;
 }
 
+.text_white_50_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 50px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
 
 .text_white_60_bold {
   font-family: 'Happy Monkey', cursive;
   font-size: 60px;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text_yellow_50_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 50px;
+  color: #ffff00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+.text_pink_50_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 50px;
+  color: #ff00ff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.text_white_45_bold {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 45px;
   color: #ffffff;
   font-weight: bold;
   text-decoration: none;
@@ -601,6 +813,14 @@ font-family: 'Happy Monkey', cursive;
   font-size: 24px;
   color: #ff0000;
 }
+
+.text_brown_24 {
+  font-family: 'Happy Monkey', cursive;
+  font-size: 24px;
+  color: #D2B48C;
+
+}
+
 .text_red_28 {
   font-family: 'Happy Monkey', cursive;
   font-size: 28px;
@@ -1027,9 +1247,9 @@ li {
 
 
 #score_5 {
-  width: 45px;
+  width: 75px;
   height: 25px;
-  padding-left: 30px;
+  padding-left: 0px;
   float: left;
     text-align: center;
   border-top: 5px solid #00ff00;
@@ -1181,108 +1401,69 @@ li {
   width: 260px;
   height: 140px; 
   background-image: url(images/elephant_1.png);
+    float: left;
 }
 
 #drag_elephant2 {
   width: 260px;
   height: 140px; 
   background-image: url(images/elephant_2.png);
+    float: left;
+
 }
 
 #drag_elephant3 {
   width: 260px;
   height: 140px; 
   background-image: url(images/elephant_3.png);
+    float: left;
 }
 
-#drag_cat1 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/cat_1.png);
-}
 
-#drag_cat2 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/cat_2.png);
-}
-
-#drag_cat3 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/cat_3.png);
-}
 
 #drag_bluebird1 {
   width: 260px;
   height: 140px; 
   background-image: url(images/bluebird_1.png);
+    float: left;
+
 }
 
 #drag_bluebird2 {
   width: 260px;
   height: 140px; 
   background-image: url(images/bluebird_2.png);
+    float: left;
 }
 
 #drag_bluebird3 {
   width: 260px;
   height: 140px; 
   background-image: url(images/bluebird_3.png);
+    float: left;
+
 }
 
-#drag_flamingo1 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/flamingo_1.png);
-}
-
-#drag_flamingo2 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/flamingo_2.png);
-}
-
-#drag_flamingo3 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/flamingo_3.png);
-}
-
-#drag_giraffe1 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/giraffe_1.png);
-}
-
-#drag_giraffe2 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/giraffe_2.png);
-}
-
-#drag_giraffe3 {
-  width: 260px;
-  height: 140px; 
-  background-image: url(images/giraffe_3.png);
-}
 
 #drag_dog1 {
   width: 260px;
   height: 140px; 
   background-image: url(images/dogbrown_1.png);
+     float: left;
 }
 
 #drag_dog2 {
   width: 260px;
   height: 140px; 
   background-image: url(images/dogbrown_2.png);
+     float: left;
 }
 
 #drag_dog3 {
   width: 260px;
   height: 140px; 
   background-image: url(images/dogbrown_3.png);
+     float: left;
 }
 .jigsaw{
   width: 260px;
@@ -1294,6 +1475,7 @@ li {
 .jigsaw_no_border{
   width: 260px;
   height: 140px; 
+  text-align: center;
   /*background-color: red;*/
 }
 
@@ -1382,21 +1564,23 @@ width:100px;
 }
 
 #bonus {
-  width: 580px;
-  height: 260px;
-    margin-left: 180px;
-      border-top: 20px solid #ff9999;
-  border-bottom: 20px solid #990033;
-  border-left: 20px solid #cc0033;
-  border-right: 20px solid #cc0033;
-  background-color: #BF3EFF;
-  margin-top: 50px;
+  width: 560px;
+  height: 290px;
+    margin-left: 365px;
+      margin-top: 275px;
+      border-top: 20px solid #CAFF70;
+  border-bottom: 20px solid #008B45;
+  border-left: 20px solid #32CD32;
+  border-right: 20px solid #32CD32;
+  background-color: #00FF7F;
+    background-image: url(images/bonus.png);
   text-align: center;
   padding-top: 20px;
   float: left;
-   z-index: 7;
+   z-index: 11;
   position: absolute;
-  display: none;
+display: none;
 
+ 
 }
 
