@@ -67,9 +67,13 @@ function check(){
 
 user_name = document.getElementById("name").value;
 expires.setFullYear(expires.getFullYear() + 1);
-
+if (user_name == ""){
+alert("please enter your name");
+}
+else{
 document.cookie = escape("name") + " " + escape(user_name) + "; expires =" + expires.toGMTString();
 $("#bonus-intro").fadeIn(1000);
+}
 
 }
 
