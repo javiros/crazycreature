@@ -25,7 +25,7 @@ body {
 
 #drag_empty1a {
   width: 535px;
-  height: 200px;
+  height: 170px;
   float: left;
 }
 
@@ -66,7 +66,7 @@ body {
 }
 #drag_empty1h {
   width: 535px;
-  height: 310px;
+  height: 340px;
     float: left;
 }
 
@@ -110,25 +110,25 @@ body {
 }
 
 #drag_empty3b {
-  width: 20px;
+  width: 10px;
   height: 140px;
   float: left;
 }
 
 #drag_empty3c {
-  width: 255px;
+  width: 265px;
   height: 140px;
   float: left;
 }
 
 #drag_empty3d {
-  width: 125px;
+  width: 175px;
   height: 140px;
   float: left;
 }
 
 #drag_empty3e {
-  width: 150px;
+  width: 100px;
   height: 140px;
   float: left;
 }
