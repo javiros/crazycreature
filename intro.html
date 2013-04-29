@@ -1,29 +1,38 @@
-<!DOCTYPE html>
-<html>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Autour+One' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Merienda:700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Happy+Monkey' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Nunito:700' rel='stylesheet' type='text/css'>
-   <title>Crazy Creatures Stage 6</title>
+   <title>Crazy Creatures Intro</title>
    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
    <link rel="stylesheet" type="text/css" href="crazy_creatures.css"/>
    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-  <script src=" http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-   <script src="script_stage6.js"></script>
-    <script src="jquerySides6.js"></script>
-    <script src="jqueryTrees6.js"></script>
+   <script src=" http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+   <script src="script_stage1.js"></script>
+    <script src="jquerySides1.js"></script>
+    <script src="jqueryTrees1.js"></script>
     <script src="jqueryBadges.js"></script>
-     <script src="jqueryRandom.js"></script>
-    <script src="jqueryRoosterBounce.js"></script>
-    <script src="jqueryRoosterBounceRight.js"></script>
+    <script src="jqueryMonkeyBounce.js"></script>
+	<script src="jqueryRoosterBounce.js"></script>
+	<script src="jqueryBirdBounce.js"></script> 
+    <script src="script_stage5.js"></script>
 	<script src="introvalid.js"></script>
+	<script src="ajax.js"></script>
+      
    </head>
-<body onload="display()">
+<body>
 	<div id="mainContainer">
 	<div id="greeting">
 	</div>
-
+	<div id="intro">
+	Enter Your Name:<input type="text" id="name" />
+	<input type="button" value="enter" onClick="check()" />
+    </div>
+	 
 		<div id="rooster_bounce_left">
 		</div>	
 
@@ -69,7 +78,7 @@
 			<span class="text_pink_24">CRAZY</span> <span class="text_blue_24">CREATURES </span><br />
 			with the right Answers!<br /><br />
 			<span class="text_red_28"> HEY HEY Let's Go!!</span><br />
-			<span class="text_red_28">Press and See!</span><br />
+			<span class="text_red_28"></span><br />
 			
 		</div>
 		
@@ -77,36 +86,16 @@
 
 			<div id="quiz">
 
-				<div id="stage6_text">					
-					<span class="stage5">
-					Let's Make More</span><br />
-					<span class="stage4">
-					CRAZY</span> <br />
-					<span class="stage3">CREATURES </span><br />
-					<span class="text_black"><p> Have Fun Pressing Buttons!</p></span>
-				</div>
+				
+			<div id="bonus-intro"><span class="text_yellow_50_bold">Let's get Started</span><br />
+		<span class="text_white_45_bold">Press<a href ="crazy_creatures_1.html"> Here </a>To <br />play!</span></div>	
 
-						
-
-				<div id="start_button">
-					<span class="text_yellow_30_bold"> <a href="crazy_creatures_1.html">Back to Stage 1!</a></span>										
-				</div>	
+				
 
 
-				<div id="random_buttons">
-					<div id="red_button1"></div>
-					<div id="red_button2"></div>
-					<div id="red_button3"></div>
-				</div>
+				
 			</div>
-			<div id="slides_empty">
-				<div id="slides6_1">
-				</div>
-				<div id="slides6_2">
-				</div>	
-				<div id="slides6_3">
-				</div>	
-			</div>
+			
 
 			
 			
@@ -121,24 +110,11 @@
 						<p class="stage5">Stage 5</p>
 					</div>
 
-					<div id="stage1_tick" class="stage_tick">
-					</div>
-					<div id="stage2_tick" class="stage_tick">
-					</div>
-					<div id="stage3_tick" class="stage_tick">
-					</div>
-					<div id="stage4_tick" class="stage_tick">
-					</div>
-					<div id="stage5_tick" class="stage_tick">
+					
 					</div>
 
-					<div id="score_text">
-					<span class="text_blk_30">SCORE</span>
-					</div>
-
-					<div id="score">
-						<span class="text_blk_25"> 2000</span>
-					</div>
+					
+					
 		</div>
 
 	<div id="bottom">
