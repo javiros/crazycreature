@@ -57,7 +57,7 @@ if ((document.cookie == "") == false){
 
 var length = document.cookie.length -1;
 var message = document.cookie.substr(5, length);
-$("#greeting").append("Hi " + message + " " + "have fun playing crazy creatures").fadeOut(6000);
+$("#greeting").append("Hi " + message + " " + "have fun playing crazy creatures").fadeOut(20000);
 }
 }
 
@@ -72,7 +72,8 @@ alert("please enter your name");
 }
 else{
 document.cookie = escape("name") + " " + escape(user_name) + "; expires =" + expires.toGMTString();
-$("#bonus-intro").fadeIn(1000);
+$("#bonus-intro").effect("shake", { times:4 }, 3500);
+
 }
 
 }
