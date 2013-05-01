@@ -57,7 +57,7 @@ if ((document.cookie == "") == false){
 
 var length = document.cookie.length -1;
 var message = document.cookie.substr(5, length);
-$("#greeting").append("Hi " + message + " " + "have fun playing crazy creatures").fadeOut(20000);
+$("#greeting").append("Hi " + message + "<br /> " + "Let's make CRAZY CREATURES!").fadeIn().delay(5000).fadeOut(3000);
 }
 }
 

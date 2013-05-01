@@ -1,6 +1,6 @@
    $(document).ready(function(){   
         $('#rooster_bounce_right').on ('mouseover',function(){  
-  		$('#rooster_bounce_right').effect("bounce", { times: 5 }, 3000); 
+  		$('#rooster_bounce_right').effect("bounce", { times: 1 }, 500); 
   	});
    
 });
