@@ -39,7 +39,7 @@ $(document).on("ready", function(){
 	var bonus_display = (function() {
 		
 		if (score >= 9){
-			$("#bonus").effect("shake",{  times: 6}, 5000);
+			$("#bonus").effect("shake",{  times: 6}, 5000).append('<embed src="sounds/cheer2.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
 			$(".text_blk_22a").text(2000);
 		}
 		

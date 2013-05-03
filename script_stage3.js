@@ -41,7 +41,7 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("Hey it's a Panda! On to Stage 4");
+				$("#question").text("Hey it's a Panda! Well Done! ");
 				$('#next_button').effect("shake", { times:2 }, 2000);
 				$('#slides_panda').effect("bounce", { times:3 }, 2000);
 				$("#answer").empty();

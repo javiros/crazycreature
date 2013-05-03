@@ -48,8 +48,8 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("Look a Monkey! On to Stage 2");
-				$('#next_button').effect("shake", { times:2 }, 2000);
+				$("#question").text("Look a Monkey! Well Done!");
+				$('#next_button').effect("shake", { times:2 }, 2000).append('<embed src="sounds/applause.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');;
 				
 				$('#slides').effect("bounce", { times:3 }, 2000);
 				$("#answer").empty();
