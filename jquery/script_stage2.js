@@ -1,14 +1,14 @@
 
 $(document).on("ready", function(){
-$('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+$('body').append('<embed src="sounds/PT_155963_lowres.mp3" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
   var questions = [
-	{"text": "What is a Tiger?", "answers": ["A Car", "A Sandwich", "An Animal", "A Food"], "correct": "An Animal", "picture": "images/monkey_1.png" },
-	{"text": "Where do Octopus live?", "answers": ["The Moon", "Germany", "Your Fridge", "The Ocean"], "correct": "The Ocean" },
-	{"text": "What is Cinderella?", "answers": ["A Star", "A Princess", "A Fairy", "A Game"], "correct": "A Princess" },
+	{"text": "What is the Sun?", "answers": ["A Star", "A Planet", "A Food", "A Big Bulb"], "correct": "A Star", "picture": "images/monkey_1.png" },
+	{"text": "Where is Paris?", "answers": ["In Antartica", "In the Fridge", "On the Moon", "In France"], "correct": "In France" },
+	{"text": "What is a Flamingo?", "answers": ["A Fairy", "A Plant", "A Bird", "A Fluffy Toy?"], "correct": "A Bird" },
   ];
   
-	var score = 0
-	var slide = ["images/monkey_1.png", "images/monkey_2.png", "images/monkey_3.png"]
+	var score = 0 
+  var slide = ["images/octopus_1.png", "images/octopus_2.png", "images/octopus_3.png"]
 	var sound = ["monkeysound.wav"]
 	
 
@@ -24,15 +24,12 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 		}
 		
 		$("#answer li").on("click", validate_answer);
-		
-		//code below: source= http://codereview.stackexchange.com/questions/11948/randomize-a-jquery-object-list
+		//code below: source= http://codereview.stackexchange.com/questions/11948/randomize-a-jquery-object-list	
 		for (var $x=$("#answer li"), i=$x.length-1, j, temp; i>=0; i--) { j=Math.floor(Math.random()*(i+1)), temp=$x[i], $x[i]=$x[j], $x[j]=temp; }
 		$x.each(function(i, li) { $("#answer").append(li);
 		});
-		
+
 	});
-	
-	
 	
 
 	var validate_answer = (function () {
@@ -40,17 +37,16 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 		if ($(this).text() == questions[score].correct) {
 			score++;
 			
-		$('#slides_' + score).slideDown(3000);
-		$('body').append('<embed src="sounds/monkeysound.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
+		$('#slides2_' + score).slideDown(3000);
+		$('body').append('<embed src="sounds/bubbles.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');
             $('#ticks').fadeIn(4000);
 			
 			if (questions.length > score) {
 				display_question();
 				countdown = max_countdown;
 			} else {
-				$("#question").text("Look a Monkey! Well Done!");
-				$('#next_button').effect("shake", { times:2 }, 2000).append('<embed src="sounds/applause.wav" autostart="true" width="1" height="1" id="LegacySound" enablejavascript="true">');;
-				
+				$("#question").text("Wow an Octopus! You're doing great!");
+				$('#next_button').effect("shake", { times:2 }, 2000);
 				$('#slides').effect("bounce", { times:3 }, 2000);
 				$("#answer").empty();
 				clearInterval(countdown_interval);
@@ -73,8 +69,7 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 	});
 	
 	var display_score = (function (){ 
-			$(".text_blk_25").text(score * 100);
-		
+			$(".text_blk_25").text( 300 + score * 100);
 			
 	});
 	
@@ -109,9 +104,12 @@ $('body').append('<embed src="sounds/drums.mp3" autostart="true" width="1" heigh
 			}
 
 	});
+
+	
+
 	
 	display_question();
 	display_score();
 
 
-});
+});	
